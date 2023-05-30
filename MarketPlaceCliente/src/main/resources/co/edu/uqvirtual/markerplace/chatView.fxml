@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="524.0" prefWidth="579.0" style="-fx-background-color: #3b5998;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uqvirtual.markerplace.controllers.ChatViewController">
+   <children>
+      <Button fx:id="btnSalir_chatView" layoutX="502.0" layoutY="14.0" mnemonicParsing="false" onAction="#salir_ChatViewAction" style="-fx-background-color: #37548e;" text="X" textFill="WHITE">
+         <font>
+            <Font name="Franklin Gothic Book" size="14.0" />
+         </font>
+      </Button>
+      <Pane layoutX="38.0" layoutY="65.0" prefHeight="411.0" prefWidth="499.0" style="-fx-background-color: #FFFFFF;">
+         <children>
+            <Label layoutX="231.0" layoutY="14.0" text="Chat" textFill="#3b5998">
+               <font>
+                  <Font name="Franklin Gothic Book" size="20.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="txtAreaChat_chat" layoutX="23.0" layoutY="46.0" prefHeight="200.0" prefWidth="455.0" style="-fx-border-color: #3b5998;" />
+            <Label alignment="CENTER" layoutX="159.0" layoutY="252.0" text="Ingrese el comentario" textFill="#3b5998">
+               <font>
+                  <Font name="Franklin Gothic Book" size="20.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="txtAreaComen_chat" layoutX="23.0" layoutY="288.0" prefHeight="70.0" prefWidth="455.0" style="-fx-border-color: #3b5998;" />
+            <Button fx:id="btnEnviarComen_chat" layoutX="202.0" layoutY="369.0" mnemonicParsing="false" onAction="#EnviarComentarioAction" prefHeight="28.0" prefWidth="86.0" style="-fx-background-color: #37548e;" text="Enviar" textFill="WHITE">
+               <font>
+                  <Font name="Franklin Gothic Book" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

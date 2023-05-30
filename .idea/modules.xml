@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/MarketPlaceCliente/MarkerPlace.iml" filepath="$PROJECT_DIR$/MarketPlaceCliente/MarkerPlace.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Proyecto Programacion 3 Sockets.iml" filepath="$PROJECT_DIR$/.idea/Proyecto Programacion 3 Sockets.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MarketPlaceServidor/prueba.iml" filepath="$PROJECT_DIR$/MarketPlaceServidor/prueba.iml" />
+    </modules>
+  </component>
+</project>

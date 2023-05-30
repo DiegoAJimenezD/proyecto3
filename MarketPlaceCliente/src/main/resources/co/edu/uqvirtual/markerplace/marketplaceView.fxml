@@ -1,0 +1,1788 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<TabPane fx:id="tabPrincipal" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="747.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uqvirtual.markerplace.controllers.MarketplaceViewController">
+   <tabs>
+
+      <Tab fx:id="tabAdministrador" text="Administrador">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <AnchorPane layoutX="-1.0" prefHeight="621.0" prefWidth="755.0" style="-fx-background-color: #3b5998;">
+                     <children>
+                        <Label alignment="CENTER" layoutX="161.0" layoutY="14.0" prefHeight="52.0" prefWidth="393.0" text="ADMINISTRADOR" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font name="Franklin Gothic Book" size="34.0" />
+                           </font>
+                        </Label>
+                        <TabPane layoutX="7.0" layoutY="74.0" prefHeight="536.0" prefWidth="732.0" tabClosingPolicy="UNAVAILABLE">
+                          <tabs>
+                            <Tab text="Administración">
+                              <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <SplitPane prefHeight="621.0" prefWidth="747.0">
+                                             <items>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="513.0" prefWidth="745.0">
+                                                   <children>
+                                                      <SplitPane dividerPositions="0.5" layoutX="6.0" layoutY="8.0" orientation="VERTICAL" prefHeight="481.0" prefWidth="718.0">
+                                                         <items>
+                                                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="237.0" prefWidth="699.0" style="-fx-background-color: #ffffff;">
+                                                               <children>
+                                                                  <Label layoutX="14.0" layoutY="44.0" text="Nombre:">
+                                                                     <font>
+                                                                        <Font name="Franklin Gothic Book" size="13.0" />
+                                                                     </font>
+                                                                  </Label>
+                                                                  <Label layoutX="14.0" layoutY="94.0" text="Apellido:">
+                                                                     <font>
+                                                                        <Font name="Franklin Gothic Book" size="13.0" />
+                                                                     </font>
+                                                                  </Label>
+                                                                  <Label layoutX="14.0" layoutY="144.0" text="Número de identifición:">
+                                                                     <font>
+                                                                        <Font name="Franklin Gothic Book" size="13.0" />
+                                                                     </font>
+                                                                  </Label>
+                                                                  <Separator layoutX="280.0" layoutY="31.0" prefHeight="114.0" prefWidth="161.0" rotate="90.0" />
+                                                                  <Label alignment="CENTER" layoutX="460.0" layoutY="7.0" prefHeight="26.0" prefWidth="126.0" text="Acceso de usuario">
+                                                                     <font>
+                                                                        <Font name="System Bold" size="14.0" />
+                                                                     </font>
+                                                                  </Label>
+                                                                  <Label layoutX="379.0" layoutY="63.0" text="Usuario:" />
+                                                                  <Label layoutX="379.0" layoutY="115.0" text="Contraseña:" />
+                                                                  <TextField fx:id="txtAgregarVende_nombre" layoutX="160.0" layoutY="44.0" prefHeight="25.0" prefWidth="180.0" />
+                                                                  <TextField fx:id="txtAgregarVende_apellido" layoutX="160.0" layoutY="94.0" prefHeight="25.0" prefWidth="180.0" />
+                                                                  <TextField fx:id="txtAgregarVende_cedula" layoutX="160.0" layoutY="144.0" prefHeight="25.0" prefWidth="180.0" />
+                                                                  <TextField fx:id="txtAgregarVende_usuario" layoutX="515.0" layoutY="57.0" prefHeight="25.0" prefWidth="180.0" />
+                                                                  <TextField fx:id="txtAgregarVende_contraseña" layoutX="515.0" layoutY="107.0" prefHeight="25.0" prefWidth="180.0" />
+                                                                  <Button fx:id="btnActualizarVende_agregarVende" alignment="CENTER" layoutX="168.0" layoutY="194.0" mnemonicParsing="false" onAction="#actualizarVende_agregarVendedorAction" prefHeight="29.0" prefWidth="126.0" style="-fx-background-color: #3b5998;" text="Actualizar" textFill="WHITE">
+                                                                     <font>
+                                                                        <Font name="Franklin Gothic Book" size="15.0" />
+                                                                     </font>
+                                                                  </Button>
+                                                                  <Button fx:id="btnGuardarVende_agregarVende" alignment="CENTER" layoutX="302.0" layoutY="194.0" mnemonicParsing="false" onAction="#guardarVende_agregarVendedorAction" prefHeight="29.0" prefWidth="126.0" style="-fx-background-color: #3b5998;" text="Guardar" textFill="WHITE">
+                                                                     <font>
+                                                                        <Font name="Franklin Gothic Book" size="15.0" />
+                                                                     </font>
+                                                                  </Button>
+                                                                  <Label alignment="CENTER" layoutX="130.0" layoutY="7.0" prefHeight="26.0" prefWidth="126.0" text="Datos de usuario">
+                                                                     <font>
+                                                                        <Font name="System Bold" size="14.0" />
+                                                                     </font>
+                                                                  </Label>
+                                                                  <Button fx:id="btnEliminarVende_AgregarVende" layoutX="439.0" layoutY="194.0" mnemonicParsing="false" onAction="#eliminarVende_agregarVendedorAction" prefHeight="29.0" prefWidth="126.0" style="-fx-background-color: #3b5998;" text="Eliminar" textFill="WHITE">
+                                                                     <font>
+                                                                        <Font name="Franklin Gothic Book" size="15.0" />
+                                                                     </font>
+                                                                  </Button>
+                                                               </children>
+                                                            </AnchorPane>
+                                                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="260.0" prefWidth="733.0" style="-fx-background-color: #ffffff;">
+                                                               <children>
+                                                                  <TableView fx:id="tblListaVendedores_agregarVendedor" layoutX="35.0" layoutY="14.0" prefHeight="170.0" prefWidth="663.0" style="-fx-background-color: #E4F4FF;">
+                                                                     <columns>
+                                                                        <TableColumn fx:id="colNombre" prefWidth="220.0" text="Nombre" />
+                                                                        <TableColumn fx:id="colApellido" prefWidth="220.0" text="Apellido" />
+                                                                        <TableColumn fx:id="colCedula" prefWidth="220.0" text="N° Identificación" />
+                                                                     </columns>
+                                                                  </TableView>
+                                                                  <Button fx:id="btnSalir1" layoutX="35.0" layoutY="199.0" mnemonicParsing="false" onAction="#salir" style="-fx-background-color: #3b5998;" text="Salir" textFill="WHITE">
+                                                                     <font>
+                                                                        <Font name="Franklin Gothic Book" size="13.0" />
+                                                                     </font>
+                                                                  </Button>
+                                                               </children>
+                                                            </AnchorPane>
+                                                         </items>
+                                                      </SplitPane>
+                                                   </children>
+                                                </AnchorPane>
+                                             </items>
+                                          </SplitPane>
+                                       </children>
+                                    </AnchorPane>
+                              </content>
+                            </Tab>
+                            <Tab text="Estadísticas">
+                              <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #ffffff;">
+                                       <children>
+                                          <AnchorPane layoutX="7.0" layoutY="7.0" prefHeight="493.0" prefWidth="716.0" style="-fx-border-color: #A8A8A8;">
+                                             <children>
+                                                <Label layoutX="310.0" layoutY="14.0" text="Estadísticas">
+                                                   <font>
+                                                      <Font name="System Bold" size="18.0" />
+                                                   </font>
+                                                </Label>
+                                                <Button layoutX="296.0" layoutY="450.0" mnemonicParsing="false" onAction="#generarExportacionEstadisticas" prefHeight="29.0" prefWidth="126.0" style="-fx-background-color: #3b5998;" text="Generar reporte" textFill="WHITE">
+                                                   <font>
+                                                      <Font name="Franklin Gothic Book" size="15.0" />
+                                                   </font>
+                                                </Button>
+                                                <AnchorPane layoutX="15.0" layoutY="47.0" prefHeight="196.0" prefWidth="458.0" style="-fx-border-color: #A8A8A8;">
+                                                   <children>
+                                                      <TableView fx:id="tblVendedoresEstadisticas" layoutX="14.0" layoutY="42.0" prefHeight="145.0" prefWidth="144.0" style="-fx-background-color: #E4F4FF;">
+                                                        <columns>
+                                                          <TableColumn fx:id="colNombreEstadisticas" prefWidth="142.0" text="Vendedores" />
+                                                        </columns>
+                                                      </TableView>
+                                                      <Label layoutX="204.0" layoutY="43.0" prefHeight="17.0" prefWidth="72.0" text="Vendedor 1:" />
+                                                      <Label layoutX="204.0" layoutY="94.0" prefHeight="17.0" prefWidth="72.0" text="Vendedor 2:" />
+                                                      <TextField fx:id="txtVendedor1_estadisticas" layoutX="272.0" layoutY="39.0" promptText="Ingrese el vendedor 1" />
+                                                      <TextField fx:id="txtVendedor2_estadisticas" layoutX="272.0" layoutY="90.0" promptText="Ingrese el vendedor 2" />
+                                                      <Label layoutX="223.0" layoutY="174.0" prefHeight="17.0" prefWidth="97.0" text="Número de chats:" />
+                                                      <Label fx:id="lblCantidadChats" layoutX="335.0" layoutY="174.0" prefHeight="17.0" prefWidth="41.0" />
+                                                      <Button fx:id="btnCalcularChats" layoutX="253.0" layoutY="132.0" mnemonicParsing="false" onAction="#calcularChatsVendedores" prefHeight="29.0" prefWidth="126.0" style="-fx-background-color: #3b5998;" text="Calcular chats" textFill="WHITE">
+                                                         <font>
+                                                            <Font name="Franklin Gothic Book" size="15.0" />
+                                                         </font>
+                                                      </Button>
+                                                      <Label layoutX="108.0" layoutY="4.0" text="Cantidad de mensajes entre dos vendedores">
+                                                         <font>
+                                                            <Font name="System Bold" size="14.0" />
+                                                         </font>
+                                                      </Label>
+                                                   </children>
+                                                </AnchorPane>
+                                                <AnchorPane layoutX="473.0" layoutY="47.0" prefHeight="196.0" prefWidth="229.0" style="-fx-border-color: #A8A8A8;">
+                                                   <children>
+                                                      <Label layoutX="7.0" layoutY="4.0" text="Cantidad de productos por fecha">
+                                                         <font>
+                                                            <Font name="System Bold" size="14.0" />
+                                                         </font>
+                                                      </Label>
+                                                      <Label layoutX="14.0" layoutY="35.0" prefWidth="95.0" text="Ingrese la fecha:" />
+                                                      <Label layoutX="16.0" layoutY="165.0" prefHeight="17.0" prefWidth="79.0" text="Se publicaron" />
+                                                      <Label fx:id="lblCantidadProductos" layoutX="95.0" layoutY="165.0" prefHeight="17.0" prefWidth="41.0" />
+                                                      <Label layoutX="139.0" layoutY="165.0" prefHeight="17.0" prefWidth="76.0" text="productos" />
+                                                      <Button fx:id="btnCalcularProductos_fecha" layoutX="51.0" layoutY="126.0" mnemonicParsing="false" onAction="#calcularCatidadProductosFecha" prefHeight="29.0" prefWidth="126.0" style="-fx-background-color: #3b5998;" text="Calcular" textFill="WHITE">
+                                                         <font>
+                                                            <Font name="Franklin Gothic Book" size="15.0" />
+                                                         </font>
+                                                      </Button>
+                                                      <DatePicker fx:id="dataPicker2" layoutX="21.0" layoutY="85.0" />
+                                                      <DatePicker fx:id="dataPicker1" layoutX="21.0" layoutY="53.0" />
+                                                   </children>
+                                                </AnchorPane>
+                                                <AnchorPane layoutX="244.0" layoutY="243.0" prefHeight="196.0" prefWidth="229.0" style="-fx-border-color: #A8A8A8;">
+                                                   <children>
+                                                      <Label layoutX="41.0" layoutY="4.0" text="Cantidad de contactos">
+                                                         <font>
+                                                            <Font name="System Bold" size="14.0" />
+                                                         </font>
+                                                      </Label>
+                                                      <Label fx:id="lblVendedores_cantidadContactos" alignment="TOP_LEFT" layoutX="14.0" layoutY="24.0" prefHeight="166.0" prefWidth="95.0" />
+                                                      <Label fx:id="lblVendedores_cantidadContactos1" alignment="TOP_LEFT" layoutX="180.0" layoutY="24.0" prefHeight="166.0" prefWidth="30.0" />
+                                                   </children>
+                                                </AnchorPane>
+                                                <AnchorPane layoutX="473.0" layoutY="243.0" prefHeight="196.0" prefWidth="229.0" style="-fx-border-color: #A8A8A8;">
+                                                   <children>
+                                                      <Label layoutX="59.0" layoutY="4.0" text="Top 10 productos">
+                                                         <font>
+                                                            <Font name="System Bold" size="14.0" />
+                                                         </font>
+                                                      </Label>
+                                                      <Label fx:id="lblProductos_top" alignment="TOP_LEFT" layoutX="67.0" layoutY="24.0" prefHeight="166.0" prefWidth="95.0" />
+                                                      <Label fx:id="lblVendedores_ProductosTop" alignment="TOP_LEFT" layoutX="11.0" layoutY="24.0" prefHeight="166.0" prefWidth="95.0" />
+                                                      <Label fx:id="lblVendedores_ProductosTop1" alignment="TOP_LEFT" layoutX="128.0" layoutY="24.0" prefHeight="166.0" prefWidth="95.0" />
+                                                   </children>
+                                                </AnchorPane>
+                                                <AnchorPane layoutX="15.0" layoutY="243.0" prefHeight="196.0" prefWidth="229.0" style="-fx-border-color: #A8A8A8;">
+                                                   <children>
+                                                      <Label layoutX="40.0" layoutY="4.0" text="Cantidad de productos">
+                                                         <font>
+                                                            <Font name="System Bold" size="14.0" />
+                                                         </font>
+                                                      </Label>
+                                                      <Label fx:id="lblVendedores_cantidadProductos" alignment="TOP_LEFT" layoutX="14.0" layoutY="29.0" prefHeight="166.0" prefWidth="102.0" />
+                                                      <Label fx:id="lblVendedores_cantidadProductos1" alignment="TOP_LEFT" layoutX="173.0" layoutY="29.0" prefHeight="166.0" prefWidth="34.0" AnchorPane.bottomAnchor="2.1999999999999886" />
+                                                   </children>
+                                                </AnchorPane>
+                                             </children>
+                                          </AnchorPane>
+                                       </children>
+                                    </AnchorPane>
+                              </content>
+                            </Tab>
+                          </tabs>
+                        </TabPane>
+                     </children>
+                  </AnchorPane>
+               </children></AnchorPane>
+         </content>
+      </Tab>
+      <Tab fx:id="tabVendor1" text="Vendedor 1">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <AnchorPane prefHeight="645.0" prefWidth="748.0" style="-fx-background-color: #3b5998;">
+                     <children>
+                        <TabPane layoutX="7.0" layoutY="74.0" prefHeight="536.0" prefWidth="732.0" tabClosingPolicy="UNAVAILABLE">
+                           <tabs>
+                              <Tab fx:id="tblListaProductos" text="Información Personal">
+                                 <content>
+                                    <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ffffff;">
+                                       <children>
+                                          <Label layoutX="43.0" layoutY="61.0" prefHeight="22.0" prefWidth="100.0" text="Nombre:  ">
+                                             <font>
+                                                <Font name="Franklin Gothic Book" size="14.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="43.0" layoutY="88.0" prefHeight="22.0" prefWidth="100.0" text="Apellido:  ">
+                                             <font>
+                                                <Font name="Franklin Gothic Book" size="14.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="43.0" layoutY="116.0" prefHeight="22.0" prefWidth="100.0" text="Cedula:    ">
+                                             <font>
+                                                <Font name="Franklin Gothic Book" size="14.0" />
+                                             </font>
+                                          </Label>
+                                          <Separator layoutX="42.0" layoutY="53.0" prefHeight="7.0" prefWidth="329.0" />
+                                          <Label layoutX="42.0" layoutY="23.0" text="INFORMACIÓN PERSONAL">
+                                             <font>
+                                                <Font name="Franklin Gothic Book" size="15.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="lbNombre1" layoutX="172.0" layoutY="61.0" prefHeight="22.0" prefWidth="200.0">
+                                             <font>
+                                                <Font name="Franklin Gothic Book" size="14.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="lblApellido1" layoutX="172.0" layoutY="88.0" prefHeight="22.0" prefWidth="200.0">
+                                             <font>
+                                                <Font name="Franklin Gothic Book" size="14.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="lblCedula1" layoutX="172.0" layoutY="116.0" prefHeight="22.0" prefWidth="200.0">
+                                             <font>
+                                                <Font name="Franklin Gothic Book" size="14.0" />
+                                             </font>
+                                          </Label>
+                                          <Button fx:id="btnSalir21" layoutX="42.0" layoutY="467.0" mnemonicParsing="false" onAction="#salir" style="-fx-background-color: #3b5998;" text="Salir" textFill="WHITE">
+                                             <font>
+                                                <Font name="Franklin Gothic Book" size="14.0" />
+                                             </font>
+                                          </Button>
+                                          <TableView fx:id="tblListaProductosVendedorActual" layoutX="45.0" layoutY="198.0" prefHeight="200.0" prefWidth="642.0" style="-fx-background-color: #E4F4FF;">
+                                             <columns>
+                                                <TableColumn fx:id="colNombreProductoVendedorActual1" prefWidth="213.0" text="Nombre" />
+                                                <TableColumn fx:id="colPrecioProductoVendedorActual1" prefWidth="213.0" text="Precio" />
+                                                <TableColumn fx:id="colEstadoProductoVendedorActual1" prefWidth="213.0" text="Estado" />
+                                             </columns>
+                                          </TableView>
+                                          <Button fx:id="btnAgregarProducto_vendedor11" alignment="CENTER" layoutX="272.0" layoutY="427.0" mnemonicParsing="false" onAction="#agregarProducto_vendedor1ViewAction" prefHeight="29.0" prefWidth="196.0" style="-fx-background-color: #3b5998;" text="Agregar producto" textFill="WHITE">
+                                             <font>
+                                                <Font name="Franklin Gothic Book" size="14.0" />
+                                             </font>
+                                          </Button>
+                                          <Separator layoutX="42.0" layoutY="151.0" prefHeight="7.0" prefWidth="329.0" />
+                                          <Label layoutX="42.0" layoutY="167.0" prefHeight="22.0" prefWidth="84.0" text="Productos">
+                                             <font>
+                                                <Font name="Franklin Gothic Book" size="18.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </Tab>
+                              <Tab text="Vendedor">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #ffffff;">
+                                       <children>
+                                          <SplitPane layoutX="14.0" layoutY="14.0" prefHeight="488.0" prefWidth="714.0">
+                                             <items>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" style="-fx-background-color: #ffffff;">
+                                                   <children>
+                                                      <SplitPane dividerPositions="0.5" layoutX="11.0" layoutY="11.0" orientation="VERTICAL" prefHeight="465.0" prefWidth="688.0">
+                                                         <items>
+                                                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="229.0" prefWidth="702.0" style="-fx-background-color: #ffffff;">
+                                                               <children>
+                                                                  <Label layoutX="25.0" layoutY="14.0" prefHeight="31.0" prefWidth="270.0" text="Productos aliados:" textAlignment="CENTER">
+                                                                     <font>
+                                                                        <Font name="Franklin Gothic Book" size="18.0" />
+                                                                     </font>
+                                                                  </Label>
+                                                                  <TableView fx:id="tblListaProductosVendedorAliado" layoutX="25.0" layoutY="44.0" prefHeight="142.0" prefWidth="638.0" style="-fx-background-color: #E4F4FF;">
+                                                                     <columns>
+                                                                        <TableColumn fx:id="colNombreProducto1" prefWidth="127.0" text="Nombre" />
+                                                                        <TableColumn fx:id="colPrecioProducto1" prefWidth="127.0" text="Precio" />
+                                                                        <TableColumn fx:id="colEstadoProducto1" prefWidth="127.0" text="Estado" />
+                                                                        <TableColumn fx:id="colFechaPublicacionProducto1" prefWidth="127.0" text="Fecha de publicación" />
+                                                                        <TableColumn fx:id="colMeGustaProducto1" prefWidth="127.0" text="Me gustas" />
+                                                                     </columns>
+                                                                  </TableView>
+                                                                  <Button fx:id="btnComentarios_vendedor1" alignment="CENTER" layoutX="48.0" layoutY="195.0" mnemonicParsing="false" onAction="#comentarios_vendedor1ViewAction" prefHeight="20.0" prefWidth="150.0" style="-fx-background-color: #3b5998;" text="Ver comentarios" textFill="WHITE">
+                                                                     <font>
+                                                                        <Font name="Franklin Gothic Book" size="14.0" />
+                                                                     </font>
+                                                                  </Button>
+                                                                  <Button fx:id="btnMeGusta_vendedor1" layoutX="438.0" layoutY="195.0" mnemonicParsing="false" onAction="#btnMeGusta" prefHeight="20.0" prefWidth="150.0" style="-fx-background-color: #3b5998;" text="Me gusta" textFill="WHITE">
+                                                                     <font>
+                                                                        <Font name="Franklin Gothic Book" size="14.0" />
+                                                                     </font>
+                                                                  </Button>
+                                                                  <Label layoutX="621.0" layoutY="195.0" text="👍" textFill="#3b5998">
+                                                                     <font>
+                                                                        <Font size="18.0" />
+                                                                     </font>
+                                                                  </Label>
+                                                                  <Label fx:id="lblLikes1" alignment="CENTER" layoutX="581.0" layoutY="195.0" prefHeight="27.0" prefWidth="42.0" text="0" />
+                                                                  <Button fx:id="btnVerMegustas_vendedor1" alignment="CENTER" layoutX="243.0" layoutY="195.0" mnemonicParsing="false" onAction="#verMeGustasProductoSelecionado1" prefHeight="20.0" prefWidth="150.0" style="-fx-background-color: #3b5998;" text="Ver me gustas" textFill="WHITE">
+                                                                     <font>
+                                                                        <Font name="Franklin Gothic Book" size="14.0" />
+                                                                     </font>
+                                                                  </Button>
+                                                               </children>
+                                                            </AnchorPane>
+                                                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" style="-fx-background-color: #ffffff;">
+                                                               <children>
+                                                                  <Label layoutX="22.0" layoutY="14.0" prefHeight="31.0" prefWidth="106.0" text="Aliados:" textAlignment="CENTER">
+                                                                     <font>
+                                                                        <Font name="Franklin Gothic Book" size="18.0" />
+                                                                     </font>
+                                                                  </Label>
+                                                                  <TableView fx:id="tblAliadosVendedor1" layoutX="22.0" layoutY="45.0" prefHeight="168.0" prefWidth="478.0" style="-fx-background-color: #E4F4FF;">
+                                                                     <columns>
+                                                                        <TableColumn fx:id="colNombreAliado1" prefWidth="238.0" text="Nombre" />
+                                                                        <TableColumn fx:id="colApellidoAliado1" prefWidth="238.0" text="Apellido" />
+                                                                     </columns>
+                                                                  </TableView>
+                                                                  <Button fx:id="btnGestionarAliados_vendedor1" alignment="CENTER" layoutX="522.0" layoutY="116.0" mnemonicParsing="false" onAction="#gestionarAliados_vendedor1ViewAction" prefHeight="20.0" prefWidth="150.0" style="-fx-background-color: #3b5998;" text="Gestionar aliados" textFill="WHITE">
+                                                                     <font>
+                                                                        <Font name="Franklin Gothic Book" size="14.0" />
+                                                                     </font>
+                                                                  </Button>
+                                                                  <Button fx:id="btnCharla_vendedor1" alignment="CENTER" layoutX="522.0" layoutY="161.0" mnemonicParsing="false" onAction="#iniciarCharla_vendedor1ViewAction" prefHeight="20.0" prefWidth="150.0" style="-fx-background-color: #3b5998;" text="Iniciar charla" textFill="WHITE">
+                                                                     <font>
+                                                                        <Font name="Franklin Gothic Book" size="14.0" />
+                                                                     </font>
+                                                                  </Button>
+                                                                  <Button fx:id="btnVerProductos_vendedor1" alignment="CENTER" layoutX="522.0" layoutY="71.0" mnemonicParsing="false" onAction="#verProductosAliados_vendedir1ViewAction" prefHeight="20.0" prefWidth="150.0" style="-fx-background-color: #3b5998;" text="Ver productos" textFill="WHITE">
+                                                                     <font>
+                                                                        <Font name="Franklin Gothic Book" size="14.0" />
+                                                                     </font>
+                                                                  </Button>
+                                                               </children>
+                                                            </AnchorPane>
+                                                         </items>
+                                                      </SplitPane>
+                                                   </children>
+                                                </AnchorPane>
+                                             </items>
+                                          </SplitPane>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </Tab>
+                           </tabs>
+                        </TabPane>
+                        <Label alignment="CENTER" layoutX="299.0" layoutY="20.0" prefHeight="31.0" prefWidth="150.0" text="MI CUENTA" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font name="Franklin Gothic Book" size="31.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </children></AnchorPane>
+         </content>
+      </Tab>
+
+
+
+      <Tab fx:id="tabVendedor2" text="Vendedor 2">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <AnchorPane prefHeight="645.0" prefWidth="748.0" style="-fx-background-color: #3b5998;">
+                     <children>
+                        <TabPane layoutX="7.0" layoutY="74.0" prefHeight="536.0" prefWidth="732.0" tabClosingPolicy="UNAVAILABLE">
+                           <tabs>
+                              <Tab text="Información Personal">
+                                 <content>
+                                    <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ffffff;">
+                                       <children>
+                                          <Label layoutX="43.0" layoutY="61.0" prefHeight="22.0" prefWidth="100.0" text="Nombre:  ">
+                                             <font>
+                                                <Font name="Franklin Gothic Book" size="14.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="43.0" layoutY="88.0" prefHeight="22.0" prefWidth="100.0" text="Apellido:  ">
+                                             <font>
+                                                <Font name="Franklin Gothic Book" size="14.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="43.0" layoutY="116.0" prefHeight="22.0" prefWidth="100.0" text="Cedula:    ">
+                                             <font>
+                                                <Font name="Franklin Gothic Book" size="14.0" />
+                                             </font>
+                                          </Label>
+                                          <Separator layoutX="42.0" layoutY="53.0" prefHeight="7.0" prefWidth="329.0" />
+                                          <Label layoutX="42.0" layoutY="23.0" text="INFORMACIÓN PERSONAL">
+                                             <font>
+                                                <Font name="Franklin Gothic Book" size="15.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="lbNombre2" layoutX="172.0" layoutY="61.0" prefHeight="22.0" prefWidth="200.0">
+                                             <font>
+                                                <Font name="Franklin Gothic Book" size="14.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="lblApellido2" layoutX="172.0" layoutY="88.0" prefHeight="22.0" prefWidth="200.0">
+                                             <font>
+                                                <Font name="Franklin Gothic Book" size="14.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="lblCedula2" layoutX="172.0" layoutY="116.0" prefHeight="22.0" prefWidth="200.0">
+                                             <font>
+                                                <Font name="Franklin Gothic Book" size="14.0" />
+                                             </font>
+                                          </Label>
+                                          <Button fx:id="btnSalir3" layoutX="17.0" layoutY="468.0" mnemonicParsing="false" onAction="#salir" text="Salir" />
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </Tab>
+                              <Tab text="Vendedor">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #ffffff;">
+                                       <children>
+                                          <SplitPane layoutX="14.0" layoutY="14.0" prefHeight="488.0" prefWidth="714.0">
+                                             <items>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" style="-fx-background-color: #ffffff;">
+                                                   <children>
+                                                      <SplitPane dividerPositions="0.5" layoutX="11.0" layoutY="11.0" orientation="VERTICAL" prefHeight="465.0" prefWidth="688.0">
+                                                         <items>
+                                                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" style="-fx-background-color: #ffffff;">
+                                                               <children>
+                                                                  <Label layoutX="25.0" layoutY="14.0" prefHeight="31.0" prefWidth="270.0" text="Productos registrados y sugeridos:" textAlignment="CENTER">
+                                                                     <font>
+                                                                        <Font name="Franklin Gothic Book" size="18.0" />
+                                                                     </font>
+                                                                  </Label>
+                                                                  <TableView fx:id="tblSugeridosVendedor2" layoutX="25.0" layoutY="44.0" prefHeight="142.0" prefWidth="337.0" style="-fx-background-color: #E4F4FF;">
+                                                                     <columns>
+                                                                        <TableColumn fx:id="colNombreProducto2" prefWidth="177.0" text="Nombre" />
+                                                                        <TableColumn fx:id="colEstadoProducto2" prefWidth="160.0" text="Estado" />
+                                                                     </columns>
+                                                                  </TableView>
+                                                                  <Button fx:id="btnAgregarProductoVendedor2" alignment="CENTER" layoutX="407.0" layoutY="76.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="258.0" style="-fx-background-color: #3b5998;" text="Agregar Producto" textFill="WHITE">
+                                                                     <font>
+                                                                        <Font name="Franklin Gothic Book" size="16.0" />
+                                                                     </font>
+                                                                  </Button>
+                                                                  <Button fx:id="btnComentariosVendedor2" alignment="CENTER" layoutX="407.0" layoutY="120.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="258.0" style="-fx-background-color: #3b5998;" text="Abrir Comentarios" textFill="WHITE">
+                                                                     <font>
+                                                                        <Font name="Franklin Gothic Book" size="16.0" />
+                                                                     </font>
+                                                                  </Button>
+                                                                  <Button fx:id="btnMeGustaVendedor2" layoutX="157.0" layoutY="193.0" mnemonicParsing="false" onAction="#btnMeGusta" style="-fx-background-color: #3b5998;" text="Me Gusta" textFill="WHITE" />
+                                                                  <Label layoutX="340.0" layoutY="190.0" text="👍" textFill="#3b5998">
+                                                                     <font>
+                                                                        <Font size="18.0" />
+                                                                     </font>
+                                                                  </Label>
+                                                                  <Label fx:id="lblLikes2" alignment="CENTER" layoutX="300.0" layoutY="190.0" prefHeight="27.0" prefWidth="42.0" text="0" />
+                                                               </children>
+                                                            </AnchorPane>
+                                                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" style="-fx-background-color: #ffffff;">
+                                                               <children>
+                                                                  <Label layoutX="22.0" layoutY="14.0" prefHeight="31.0" prefWidth="106.0" text="Aliados:" textAlignment="CENTER">
+                                                                     <font>
+                                                                        <Font name="Franklin Gothic Book" size="18.0" />
+                                                                     </font>
+                                                                  </Label>
+                                                                  <TableView fx:id="tblAliadosVendedor2" layoutX="22.0" layoutY="45.0" prefHeight="168.0" prefWidth="343.0" style="-fx-background-color: #E4F4FF;">
+                                                                     <columns>
+                                                                        <TableColumn fx:id="colNombreAliado2" prefWidth="161.0" text="Nombre" />
+                                                                        <TableColumn fx:id="colApellidoAliado2" prefWidth="181.0" text="Apellido" />
+                                                                     </columns>
+                                                                  </TableView>
+                                                                  <Button fx:id="btnGestionarAliadosVendedor2" alignment="CENTER" layoutX="406.0" layoutY="127.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="258.0" style="-fx-background-color: #3b5998;" text="Gestionar Aliados" textFill="WHITE">
+                                                                     <font>
+                                                                        <Font name="Franklin Gothic Book" size="16.0" />
+                                                                     </font>
+                                                                  </Button>
+                                                                  <Button fx:id="btnCharlaVendedor2" alignment="CENTER" layoutX="471.0" layoutY="182.0" mnemonicParsing="false" style="-fx-background-color: #3b5998;" text="Iniciar Charla" textFill="WHITE">
+                                                                     <font>
+                                                                        <Font name="Franklin Gothic Book" size="16.0" />
+                                                                     </font>
+                                                                  </Button>
+                                                                  <Button fx:id="btnVerProductosVendedor2" alignment="CENTER" layoutX="406.0" layoutY="83.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="258.0" style="-fx-background-color: #3b5998;" text="Ver Productos" textFill="WHITE">
+                                                                     <font>
+                                                                        <Font name="Franklin Gothic Book" size="16.0" />
+                                                                     </font>
+                                                                  </Button>
+                                                               </children>
+                                                            </AnchorPane>
+                                                         </items>
+                                                      </SplitPane>
+                                                   </children>
+                                                </AnchorPane>
+                                             </items>
+                                          </SplitPane>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </Tab>
+                           </tabs>
+                        </TabPane>
+                        <Label alignment="CENTER" layoutX="299.0" layoutY="20.0" prefHeight="31.0" prefWidth="150.0" text="MI CUENTA" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font name="Franklin Gothic Book" size="31.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="btnRefrescarVendedor2" layoutX="595.0" layoutY="26.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="141.0" style="-fx-background-color: #FFFF;" text="Refrescar Datos" textFill="#3b5998">
+                           <font>
+                              <Font name="Franklin Gothic Book" size="14.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </content>
+      </Tab>
+
+
+
+
+
+      <Tab fx:id="tabVendedor3" text="Vendedor 3">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <AnchorPane prefHeight="645.0" prefWidth="748.0" style="-fx-background-color: #3b5998;">
+                     <children>
+                        <TabPane layoutX="7.0" layoutY="74.0" prefHeight="536.0" prefWidth="732.0" tabClosingPolicy="UNAVAILABLE">
+                           <tabs>
+                              <Tab text="Información Personal">
+                                 <content>
+                                    <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ffffff;">
+                                       <children>
+                                          <Label layoutX="43.0" layoutY="61.0" prefHeight="22.0" prefWidth="100.0" text="Nombre:  ">
+                                             <font>
+                                                <Font name="Franklin Gothic Book" size="14.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="43.0" layoutY="88.0" prefHeight="22.0" prefWidth="100.0" text="Apellido:  ">
+                                             <font>
+                                                <Font name="Franklin Gothic Book" size="14.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="43.0" layoutY="116.0" prefHeight="22.0" prefWidth="100.0" text="Cedula:    ">
+                                             <font>
+                                                <Font name="Franklin Gothic Book" size="14.0" />
+                                             </font>
+                                          </Label>
+                                          <Separator layoutX="42.0" layoutY="53.0" prefHeight="7.0" prefWidth="329.0" />
+                                          <Label layoutX="42.0" layoutY="23.0" text="INFORMACIÓN PERSONAL">
+                                             <font>
+                                                <Font name="Franklin Gothic Book" size="15.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="lbNombre3" layoutX="172.0" layoutY="61.0" prefHeight="22.0" prefWidth="200.0">
+                                             <font>
+                                                <Font name="Franklin Gothic Book" size="14.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="lblApellido3" layoutX="172.0" layoutY="88.0" prefHeight="22.0" prefWidth="200.0">
+                                             <font>
+                                                <Font name="Franklin Gothic Book" size="14.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="lblCedula3" layoutX="172.0" layoutY="116.0" prefHeight="22.0" prefWidth="200.0">
+                                             <font>
+                                                <Font name="Franklin Gothic Book" size="14.0" />
+                                             </font>
+                                          </Label>
+                                          <Button fx:id="btnSalir4" layoutX="17.0" layoutY="468.0" mnemonicParsing="false" onAction="#salir" style="-fx-background-color: #37548e;" text="x" textFill="WHITE" />
+                                       </children>
+
+                                    </AnchorPane>
+                                 </content>
+                              </Tab>
+                              <Tab text="Vendedor">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #ffffff;">
+                                       <children>
+                                          <SplitPane layoutX="14.0" layoutY="14.0" prefHeight="488.0" prefWidth="714.0">
+                                             <items>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" style="-fx-background-color: #ffffff;">
+                                                   <children>
+                                                      <SplitPane dividerPositions="0.5" layoutX="11.0" layoutY="11.0" orientation="VERTICAL" prefHeight="465.0" prefWidth="688.0">
+                                                         <items>
+                                                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" style="-fx-background-color: #ffffff;">
+                                                               <children>
+                                                                  <Label layoutX="25.0" layoutY="14.0" prefHeight="31.0" prefWidth="270.0" text="Productos registrados y sugeridos:" textAlignment="CENTER">
+                                                                     <font>
+                                                                        <Font name="Franklin Gothic Book" size="18.0" />
+                                                                     </font>
+                                                                  </Label>
+                                                                  <TableView fx:id="tblSugeridosVendedor3" layoutX="25.0" layoutY="44.0" prefHeight="142.0" prefWidth="337.0" style="-fx-background-color: #E4F4FF;">
+                                                                     <columns>
+                                                                        <TableColumn fx:id="colNombreProducto3" prefWidth="177.0" text="Nombre" />
+                                                                        <TableColumn fx:id="colEstadoProducto3" prefWidth="160.0" text="Estado" />
+                                                                     </columns>
+                                                                  </TableView>
+                                                                  <Button fx:id="btnAgregarProductoVendedor3" alignment="CENTER" layoutX="407.0" layoutY="76.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="258.0" style="-fx-background-color: #3b5998;" text="Agregar Productos" textFill="WHITE">
+                                                                     <font>
+                                                                        <Font name="Franklin Gothic Book" size="16.0" />
+                                                                     </font>
+                                                                  </Button>
+                                                                  <Button fx:id="btnComentariosVendedor3" alignment="CENTER" layoutX="407.0" layoutY="120.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="258.0" style="-fx-background-color: #3b5998;" text="Abrir Comentarios" textFill="WHITE">
+                                                                     <font>
+                                                                        <Font name="Franklin Gothic Book" size="16.0" />
+                                                                     </font>
+                                                                  </Button>
+                                                                  <Button fx:id="btnMeGustaVendedor3" layoutX="157.0" layoutY="193.0" mnemonicParsing="false" onAction="#btnMeGusta" style="-fx-background-color: #3b5998;" text="Me Gusta" textFill="WHITE" />
+                                                                  <Label layoutX="340.0" layoutY="190.0" text="👍" textFill="#3b5998">
+                                                                     <font>
+                                                                        <Font size="18.0" />
+                                                                     </font>
+                                                                  </Label>
+                                                                  <Label fx:id="lblLikes3" alignment="CENTER" layoutX="300.0" layoutY="190.0" prefHeight="27.0" prefWidth="42.0" text="0" />
+                                                               </children>
+                                                            </AnchorPane>
+                                                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" style="-fx-background-color: #ffffff;">
+                                                               <children>
+                                                                  <Label layoutX="22.0" layoutY="14.0" prefHeight="31.0" prefWidth="106.0" text="Aliados:" textAlignment="CENTER">
+                                                                     <font>
+                                                                        <Font name="Franklin Gothic Book" size="18.0" />
+                                                                     </font>
+                                                                  </Label>
+                                                                  <TableView fx:id="tblAliadosVendedor3" layoutX="22.0" layoutY="45.0" prefHeight="168.0" prefWidth="343.0" style="-fx-background-color: #E4F4FF;">
+                                                                     <columns>
+                                                                        <TableColumn fx:id="colNombreAliado3" prefWidth="161.0" text="Nombre" />
+                                                                        <TableColumn fx:id="colApellidoAliado3" prefWidth="181.0" text="Apellido" />
+                                                                     </columns>
+                                                                  </TableView>
+                                                                  <Button fx:id="btnGestionarAliadosVendedor3" alignment="CENTER" layoutX="406.0" layoutY="127.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="258.0" style="-fx-background-color: #3b5998;" text="Gestionar Aliados" textFill="WHITE">
+                                                                     <font>
+                                                                        <Font name="Franklin Gothic Book" size="16.0" />
+                                                                     </font>
+                                                                  </Button>
+                                                                  <Button fx:id="btnCharlaVendedor3" alignment="CENTER" layoutX="471.0" layoutY="182.0" mnemonicParsing="false" style="-fx-background-color: #3b5998;" text="Iniciar Charla" textFill="WHITE">
+                                                                     <font>
+                                                                        <Font name="Franklin Gothic Book" size="16.0" />
+                                                                     </font>
+                                                                  </Button>
+                                                                  <Button fx:id="btnVerProductosVendedor3" alignment="CENTER" layoutX="406.0" layoutY="83.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="258.0" style="-fx-background-color: #3b5998;" text="Ver Productos" textFill="WHITE">
+                                                                     <font>
+                                                                        <Font name="Franklin Gothic Book" size="16.0" />
+                                                                     </font>
+                                                                  </Button>
+                                                               </children>
+                                                            </AnchorPane>
+                                                         </items>
+                                                      </SplitPane>
+                                                   </children>
+                                                </AnchorPane>
+                                             </items>
+                                          </SplitPane>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </Tab>
+                           </tabs>
+                        </TabPane>
+                        <Label alignment="CENTER" layoutX="299.0" layoutY="20.0" prefHeight="31.0" prefWidth="150.0" text="MI CUENTA" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font name="Franklin Gothic Book" size="31.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="btnRefrescarVendedor3" layoutX="595.0" layoutY="26.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="141.0" style="-fx-background-color: #FFFF;" text="Refrescar Datos" textFill="#3b5998">
+                           <font>
+                              <Font name="Franklin Gothic Book" size="14.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </content>
+      </Tab>
+
+
+
+
+      <!--
+
+       <Tab fx:id="tabVendedor4" text="Vendedor 4">
+          <content>
+             <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                <children>
+                   <AnchorPane prefHeight="645.0" prefWidth="748.0" style="-fx-background-color: #3b5998;">
+                      <children>
+                         <TabPane layoutX="7.0" layoutY="74.0" prefHeight="536.0" prefWidth="732.0" tabClosingPolicy="UNAVAILABLE">
+                            <tabs>
+                               <Tab text="INFORMACIÓN PERSONAL">
+                                  <content>
+                                     <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ffffff;">
+                                        <children>
+                                           <Label layoutX="43.0" layoutY="61.0" prefHeight="22.0" prefWidth="100.0" text="Nombre:  ">
+                                              <font>
+                                                 <Font name="Franklin Gothic Book" size="14.0" />
+                                              </font>
+                                           </Label>
+                                           <Label layoutX="43.0" layoutY="88.0" prefHeight="22.0" prefWidth="100.0" text="Apellido:  ">
+                                              <font>
+                                                 <Font name="Franklin Gothic Book" size="14.0" />
+                                              </font>
+                                           </Label>
+                                           <Label layoutX="43.0" layoutY="116.0" prefHeight="22.0" prefWidth="100.0" text="Cedula:    ">
+                                              <font>
+                                                 <Font name="Franklin Gothic Book" size="14.0" />
+                                              </font>
+                                           </Label>
+                                           <Button fx:id="btnCambiarDireccionVendedor4" layoutX="43.0" layoutY="207.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="141.0" style="-fx-background-color: #3b5998;" text="CAMBIAR DIRECCIÓN" textFill="WHITE" />
+                                           <Separator layoutX="42.0" layoutY="53.0" prefHeight="7.0" prefWidth="329.0" />
+                                           <Label layoutX="42.0" layoutY="23.0" text="INFORMACIÓN PERSONAL">
+                                              <font>
+                                                 <Font name="Franklin Gothic Book" size="15.0" />
+                                              </font>
+                                           </Label>
+                                           <Label fx:id="lbNombre4" layoutX="172.0" layoutY="61.0" prefHeight="22.0" prefWidth="200.0">
+                                              <font>
+                                                 <Font name="Franklin Gothic Book" size="14.0" />
+                                              </font>
+                                           </Label>
+                                           <Label fx:id="lblApellido4" layoutX="172.0" layoutY="88.0" prefHeight="22.0" prefWidth="200.0">
+                                              <font>
+                                                 <Font name="Franklin Gothic Book" size="14.0" />
+                                              </font>
+                                           </Label>
+                                           <Label fx:id="lblCedula4" layoutX="172.0" layoutY="116.0" prefHeight="22.0" prefWidth="200.0">
+                                              <font>
+                                                 <Font name="Franklin Gothic Book" size="14.0" />
+                                              </font>
+                                           </Label>
+                                        </children>
+                                     </AnchorPane>
+                                  </content>
+                               </Tab>
+                               <Tab text="VENDEDOR">
+                                  <content>
+                                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #ffffff;">
+                                        <children>
+                                           <SplitPane layoutX="14.0" layoutY="14.0" prefHeight="488.0" prefWidth="714.0">
+                                              <items>
+                                                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" style="-fx-background-color: #ffffff;">
+                                                    <children>
+                                                       <SplitPane dividerPositions="0.5" layoutX="11.0" layoutY="11.0" orientation="VERTICAL" prefHeight="465.0" prefWidth="688.0">
+                                                          <items>
+                                                             <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" style="-fx-background-color: #ffffff;">
+                                                                <children>
+                                                                   <Label layoutX="25.0" layoutY="14.0" prefHeight="31.0" prefWidth="270.0" text="Productos registrados y sugeridos:" textAlignment="CENTER">
+                                                                      <font>
+                                                                         <Font name="Franklin Gothic Book" size="18.0" />
+                                                                      </font>
+                                                                   </Label>
+                                                                   <TableView fx:id="tblSugeridosVendedor4" layoutX="25.0" layoutY="44.0" prefHeight="142.0" prefWidth="337.0" style="-fx-background-color: #E4F4FF;">
+                                                                      <columns>
+                                                                         <TableColumn fx:id="colNombreProducto4" prefWidth="177.0" text="NOMBRE" />
+                                                                         <TableColumn fx:id="colEstadoProducto4" prefWidth="160.0" text="ESTADO" />
+                                                                      </columns>
+                                                                   </TableView>
+                                                                   <Button fx:id="btnAgregarProductoVendedor1btnAgregarProductoVendedor4" alignment="CENTER" layoutX="407.0" layoutY="76.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="258.0" style="-fx-background-color: #3b5998;" text="AGREGAR PRODUCTO" textFill="WHITE">
+                                                                      <font>
+                                                                         <Font name="Franklin Gothic Book" size="16.0" />
+                                                                      </font>
+                                                                   </Button>
+                                                                   <Button fx:id="btnComentariosVendedor4" alignment="CENTER" layoutX="407.0" layoutY="120.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="258.0" style="-fx-background-color: #3b5998;" text="ABRIR VENTANA COMENTARIOS" textFill="WHITE">
+                                                                      <font>
+                                                                         <Font name="Franklin Gothic Book" size="16.0" />
+                                                                      </font>
+                                                                   </Button>
+                                                                   <Button fx:id="btnMeGustaVendedor4" layoutX="157.0" layoutY="193.0" mnemonicParsing="false" style="-fx-background-color: #3b5998;" text="ME GUSTA" textFill="WHITE" />
+                                                                   <Label layoutX="340.0" layoutY="190.0" text="👍" textFill="#3b5998">
+                                                                      <font>
+                                                                         <Font size="18.0" />
+                                                                      </font>
+                                                                   </Label>
+                                                                   <Label fx:id="lblLikes4" alignment="CENTER" layoutX="300.0" layoutY="190.0" prefHeight="27.0" prefWidth="42.0" text="0" />
+                                                                </children>
+                                                             </AnchorPane>
+                                                             <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" style="-fx-background-color: #ffffff;">
+                                                                <children>
+                                                                   <Label layoutX="22.0" layoutY="14.0" prefHeight="31.0" prefWidth="106.0" text="Aliados:" textAlignment="CENTER">
+                                                                      <font>
+                                                                         <Font name="Franklin Gothic Book" size="18.0" />
+                                                                      </font>
+                                                                   </Label>
+                                                                   <TableView fx:id="tblAliadosVendedor4" layoutX="22.0" layoutY="45.0" prefHeight="168.0" prefWidth="343.0" style="-fx-background-color: #E4F4FF;">
+                                                                      <columns>
+                                                                         <TableColumn fx:id="colNombreAliado4" prefWidth="161.0" text="NOMBRE" />
+                                                                         <TableColumn fx:id="colApellidoAliado4" prefWidth="181.0" text="APELLIDO" />
+                                                                      </columns>
+                                                                   </TableView>
+                                                                   <Button fx:id="btnGestionarAliadosVendedor4" alignment="CENTER" layoutX="406.0" layoutY="127.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="258.0" style="-fx-background-color: #3b5998;" text="GESTIONAR ALIADOS" textFill="WHITE">
+                                                                      <font>
+                                                                         <Font name="Franklin Gothic Book" size="16.0" />
+                                                                      </font>
+                                                                   </Button>
+                                                                   <Button fx:id="btnCharlaVendedor4" alignment="CENTER" layoutX="471.0" layoutY="182.0" mnemonicParsing="false" style="-fx-background-color: #3b5998;" text="INICIAR CHARLA" textFill="WHITE">
+                                                                      <font>
+                                                                         <Font name="Franklin Gothic Book" size="16.0" />
+                                                                      </font>
+                                                                   </Button>
+                                                                   <Button fx:id="btnVerProductosVendedor4" alignment="CENTER" layoutX="406.0" layoutY="83.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="258.0" style="-fx-background-color: #3b5998;" text="VER PRODUCTOS" textFill="WHITE">
+                                                                      <font>
+                                                                         <Font name="Franklin Gothic Book" size="16.0" />
+                                                                      </font>
+                                                                   </Button>
+                                                                </children>
+                                                             </AnchorPane>
+                                                          </items>
+                                                       </SplitPane>
+                                                    </children>
+                                                 </AnchorPane>
+                                              </items>
+                                           </SplitPane>
+                                        </children>
+                                     </AnchorPane>
+                                  </content>
+                               </Tab>
+                            </tabs>
+                         </TabPane>
+                         <Label alignment="CENTER" layoutX="299.0" layoutY="20.0" prefHeight="31.0" prefWidth="150.0" text="MI CUENTA" textAlignment="CENTER" textFill="WHITE">
+                            <font>
+                               <Font name="Franklin Gothic Book" size="31.0" />
+                            </font>
+                         </Label>
+                         <Button fx:id="btnRefrescarVendedor4" layoutX="595.0" layoutY="26.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="141.0" style="-fx-background-color: #FFFF;" text="REFRESCAR DATOS" textFill="#3b5998">
+                            <font>
+                               <Font name="Franklin Gothic Book" size="14.0" />
+                            </font>
+                         </Button>
+                      </children>
+                   </AnchorPane>
+                </children>
+             </AnchorPane>
+          </content>
+       </Tab>
+       <Tab fx:id="tabVendedor5" text="Vendedor 5">
+          <content>
+             <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                <children>
+                   <AnchorPane prefHeight="645.0" prefWidth="748.0" style="-fx-background-color: #3b5998;">
+                      <children>
+                         <TabPane layoutX="7.0" layoutY="74.0" prefHeight="536.0" prefWidth="732.0" tabClosingPolicy="UNAVAILABLE">
+                            <tabs>
+                               <Tab text="INFORMACIÓN PERSONAL">
+                                  <content>
+                                     <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ffffff;">
+                                        <children>
+                                           <Label layoutX="43.0" layoutY="61.0" prefHeight="22.0" prefWidth="100.0" text="Nombre:  ">
+                                              <font>
+                                                 <Font name="Franklin Gothic Book" size="14.0" />
+                                              </font>
+                                           </Label>
+                                           <Label layoutX="43.0" layoutY="88.0" prefHeight="22.0" prefWidth="100.0" text="Apellido:  ">
+                                              <font>
+                                                 <Font name="Franklin Gothic Book" size="14.0" />
+                                              </font>
+                                           </Label>
+                                           <Label layoutX="43.0" layoutY="116.0" prefHeight="22.0" prefWidth="100.0" text="Cedula:    ">
+                                              <font>
+                                                 <Font name="Franklin Gothic Book" size="14.0" />
+                                              </font>
+                                           </Label>
+                                           <Button fx:id="btnCambiarDireccionVendedor5" layoutX="43.0" layoutY="207.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="141.0" style="-fx-background-color: #3b5998;" text="CAMBIAR DIRECCIÓN" textFill="WHITE" />
+                                           <Separator layoutX="42.0" layoutY="53.0" prefHeight="7.0" prefWidth="329.0" />
+                                           <Label layoutX="42.0" layoutY="23.0" text="INFORMACIÓN PERSONAL">
+                                              <font>
+                                                 <Font name="Franklin Gothic Book" size="15.0" />
+                                              </font>
+                                           </Label>
+                                           <Label fx:id="lbNombre5" layoutX="172.0" layoutY="61.0" prefHeight="22.0" prefWidth="200.0">
+                                              <font>
+                                                 <Font name="Franklin Gothic Book" size="14.0" />
+                                              </font>
+                                           </Label>
+                                           <Label fx:id="lblApellido5" layoutX="172.0" layoutY="88.0" prefHeight="22.0" prefWidth="200.0">
+                                              <font>
+                                                 <Font name="Franklin Gothic Book" size="14.0" />
+                                              </font>
+                                           </Label>
+                                           <Label fx:id="lblCedula5" layoutX="172.0" layoutY="116.0" prefHeight="22.0" prefWidth="200.0">
+                                              <font>
+                                                 <Font name="Franklin Gothic Book" size="14.0" />
+                                              </font>
+                                           </Label>
+                                        </children>
+                                     </AnchorPane>
+                                  </content>
+                               </Tab>
+                               <Tab text="VENDEDOR">
+                                  <content>
+                                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #ffffff;">
+                                        <children>
+                                           <SplitPane layoutX="14.0" layoutY="14.0" prefHeight="488.0" prefWidth="714.0">
+                                              <items>
+                                                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" style="-fx-background-color: #ffffff;">
+                                                    <children>
+                                                       <SplitPane dividerPositions="0.5" layoutX="11.0" layoutY="11.0" orientation="VERTICAL" prefHeight="465.0" prefWidth="688.0">
+                                                          <items>
+                                                             <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" style="-fx-background-color: #ffffff;">
+                                                                <children>
+                                                                   <Label layoutX="25.0" layoutY="14.0" prefHeight="31.0" prefWidth="270.0" text="Productos registrados y sugeridos:" textAlignment="CENTER">
+                                                                      <font>
+                                                                         <Font name="Franklin Gothic Book" size="18.0" />
+                                                                      </font>
+                                                                   </Label>
+                                                                   <TableView fx:id="tblSugeridosVendedor5" layoutX="25.0" layoutY="44.0" prefHeight="142.0" prefWidth="337.0" style="-fx-background-color: #E4F4FF;">
+                                                                      <columns>
+                                                                         <TableColumn fx:id="colNombreProducto5" prefWidth="177.0" text="NOMBRE" />
+                                                                         <TableColumn fx:id="colEstadoProducto5" prefWidth="160.0" text="ESTADO" />
+                                                                      </columns>
+                                                                   </TableView>
+                                                                   <Button fx:id="btnAgregarProductoVendedor5" alignment="CENTER" layoutX="407.0" layoutY="76.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="258.0" style="-fx-background-color: #3b5998;" text="AGREGAR PRODUCTO" textFill="WHITE">
+                                                                      <font>
+                                                                         <Font name="Franklin Gothic Book" size="16.0" />
+                                                                      </font>
+                                                                   </Button>
+                                                                   <Button fx:id="btnComentariosVendedor5" alignment="CENTER" layoutX="407.0" layoutY="120.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="258.0" style="-fx-background-color: #3b5998;" text="ABRIR VENTANA COMENTARIOS" textFill="WHITE">
+                                                                      <font>
+                                                                         <Font name="Franklin Gothic Book" size="16.0" />
+                                                                      </font>
+                                                                   </Button>
+                                                                   <Button fx:id="btnMeGustaVendedor5" layoutX="157.0" layoutY="193.0" mnemonicParsing="false" style="-fx-background-color: #3b5998;" text="ME GUSTA" textFill="WHITE" />
+                                                                   <Label layoutX="340.0" layoutY="190.0" text="👍" textFill="#3b5998">
+                                                                      <font>
+                                                                         <Font size="18.0" />
+                                                                      </font>
+                                                                   </Label>
+                                                                   <Label fx:id="lblLikes5" alignment="CENTER" layoutX="300.0" layoutY="190.0" prefHeight="27.0" prefWidth="42.0" text="0" />
+                                                                </children>
+                                                             </AnchorPane>
+                                                             <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" style="-fx-background-color: #ffffff;">
+                                                                <children>
+                                                                   <Label layoutX="22.0" layoutY="14.0" prefHeight="31.0" prefWidth="106.0" text="Aliados:" textAlignment="CENTER">
+                                                                      <font>
+                                                                         <Font name="Franklin Gothic Book" size="18.0" />
+                                                                      </font>
+                                                                   </Label>
+                                                                   <TableView fx:id="tblAliadosVendedor5" layoutX="22.0" layoutY="45.0" prefHeight="168.0" prefWidth="343.0" style="-fx-background-color: #E4F4FF;">
+                                                                      <columns>
+                                                                         <TableColumn fx:id="colNombreAliado5" prefWidth="161.0" text="NOMBRE" />
+                                                                         <TableColumn fx:id="colApellidoAliado5" prefWidth="181.0" text="APELLIDO" />
+                                                                      </columns>
+                                                                   </TableView>
+                                                                   <Button fx:id="btnGestionarAliadosVendedor5" alignment="CENTER" layoutX="406.0" layoutY="127.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="258.0" style="-fx-background-color: #3b5998;" text="GESTIONAR ALIADOS" textFill="WHITE">
+                                                                      <font>
+                                                                         <Font name="Franklin Gothic Book" size="16.0" />
+                                                                      </font>
+                                                                   </Button>
+                                                                   <Button fx:id="btnCharlaVendedor5" alignment="CENTER" layoutX="471.0" layoutY="182.0" mnemonicParsing="false" style="-fx-background-color: #3b5998;" text="INICIAR CHARLA" textFill="WHITE">
+                                                                      <font>
+                                                                         <Font name="Franklin Gothic Book" size="16.0" />
+                                                                      </font>
+                                                                   </Button>
+                                                                   <Button fx:id="btnVerProductosVendedor5" alignment="CENTER" layoutX="406.0" layoutY="83.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="258.0" style="-fx-background-color: #3b5998;" text="VER PRODUCTOS" textFill="WHITE">
+                                                                      <font>
+                                                                         <Font name="Franklin Gothic Book" size="16.0" />
+                                                                      </font>
+                                                                   </Button>
+                                                                </children>
+                                                             </AnchorPane>
+                                                          </items>
+                                                       </SplitPane>
+                                                    </children>
+                                                 </AnchorPane>
+                                              </items>
+                                           </SplitPane>
+                                        </children>
+                                     </AnchorPane>
+                                  </content>
+                               </Tab>
+                            </tabs>
+                         </TabPane>
+                         <Label alignment="CENTER" layoutX="299.0" layoutY="20.0" prefHeight="31.0" prefWidth="150.0" text="MI CUENTA" textAlignment="CENTER" textFill="WHITE">
+                            <font>
+                               <Font name="Franklin Gothic Book" size="31.0" />
+                            </font>
+                         </Label>
+                         <Button fx:id="btnRefrescarVendedor5" layoutX="595.0" layoutY="26.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="141.0" style="-fx-background-color: #FFFF;" text="REFRESCAR DATOS" textFill="#3b5998">
+                            <font>
+                               <Font name="Franklin Gothic Book" size="14.0" />
+                            </font>
+                         </Button>
+                      </children>
+                   </AnchorPane>
+                </children>
+             </AnchorPane>
+          </content>
+       </Tab>
+       <Tab fx:id="tabVendedor6" text="Vendedor 6">
+          <content>
+             <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                <children>
+                   <AnchorPane prefHeight="645.0" prefWidth="748.0" style="-fx-background-color: #3b5998;">
+                      <children>
+                         <TabPane layoutX="7.0" layoutY="74.0" prefHeight="536.0" prefWidth="732.0" tabClosingPolicy="UNAVAILABLE">
+                            <tabs>
+                               <Tab text="INFORMACIÓN PERSONAL">
+                                  <content>
+                                     <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ffffff;">
+                                        <children>
+                                           <Label layoutX="43.0" layoutY="61.0" prefHeight="22.0" prefWidth="100.0" text="Nombre:  ">
+                                              <font>
+                                                 <Font name="Franklin Gothic Book" size="14.0" />
+                                              </font>
+                                           </Label>
+                                           <Label layoutX="43.0" layoutY="88.0" prefHeight="22.0" prefWidth="100.0" text="Apellido:  ">
+                                              <font>
+                                                 <Font name="Franklin Gothic Book" size="14.0" />
+                                              </font>
+                                           </Label>
+                                           <Label layoutX="43.0" layoutY="116.0" prefHeight="22.0" prefWidth="100.0" text="Cedula:    ">
+                                              <font>
+                                                 <Font name="Franklin Gothic Book" size="14.0" />
+                                              </font>
+                                           </Label>
+                                           <Button fx:id="btnCambiarDireccionVendedor6" layoutX="43.0" layoutY="207.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="141.0" style="-fx-background-color: #3b5998;" text="CAMBIAR DIRECCIÓN" textFill="WHITE" />
+                                           <Separator layoutX="42.0" layoutY="53.0" prefHeight="7.0" prefWidth="329.0" />
+                                           <Label layoutX="42.0" layoutY="23.0" text="INFORMACIÓN PERSONAL">
+                                              <font>
+                                                 <Font name="Franklin Gothic Book" size="15.0" />
+                                              </font>
+                                           </Label>
+                                           <Label fx:id="lbNombre6" layoutX="172.0" layoutY="61.0" prefHeight="22.0" prefWidth="200.0">
+                                              <font>
+                                                 <Font name="Franklin Gothic Book" size="14.0" />
+                                              </font>
+                                           </Label>
+                                           <Label fx:id="lblApellido6" layoutX="172.0" layoutY="88.0" prefHeight="22.0" prefWidth="200.0">
+                                              <font>
+                                                 <Font name="Franklin Gothic Book" size="14.0" />
+                                              </font>
+                                           </Label>
+                                           <Label fx:id="lblCedula6" layoutX="172.0" layoutY="116.0" prefHeight="22.0" prefWidth="200.0">
+                                              <font>
+                                                 <Font name="Franklin Gothic Book" size="14.0" />
+                                              </font>
+                                           </Label>
+                                        </children>
+                                     </AnchorPane>
+                                  </content>
+                               </Tab>
+                               <Tab text="VENDEDOR">
+                                  <content>
+                                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #ffffff;">
+                                        <children>
+                                           <SplitPane layoutX="14.0" layoutY="14.0" prefHeight="488.0" prefWidth="714.0">
+                                              <items>
+                                                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" style="-fx-background-color: #ffffff;">
+                                                    <children>
+                                                       <SplitPane dividerPositions="0.5" layoutX="11.0" layoutY="11.0" orientation="VERTICAL" prefHeight="465.0" prefWidth="688.0">
+                                                          <items>
+                                                             <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" style="-fx-background-color: #ffffff;">
+                                                                <children>
+                                                                   <Label layoutX="25.0" layoutY="14.0" prefHeight="31.0" prefWidth="270.0" text="Productos registrados y sugeridos:" textAlignment="CENTER">
+                                                                      <font>
+                                                                         <Font name="Franklin Gothic Book" size="18.0" />
+                                                                      </font>
+                                                                   </Label>
+                                                                   <TableView fx:id="tblSugeridosVendedor6" layoutX="25.0" layoutY="44.0" prefHeight="142.0" prefWidth="337.0" style="-fx-background-color: #E4F4FF;">
+                                                                      <columns>
+                                                                         <TableColumn fx:id="colNombreProducto6" prefWidth="177.0" text="NOMBRE" />
+                                                                         <TableColumn fx:id="colEstadoProducto6" prefWidth="160.0" text="ESTADO" />
+                                                                      </columns>
+                                                                   </TableView>
+                                                                   <Button fx:id="btnAgregarProductoVendedor6" alignment="CENTER" layoutX="407.0" layoutY="76.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="258.0" style="-fx-background-color: #3b5998;" text="AGREGAR PRODUCTO" textFill="WHITE">
+                                                                      <font>
+                                                                         <Font name="Franklin Gothic Book" size="16.0" />
+                                                                      </font>
+                                                                   </Button>
+                                                                   <Button fx:id="btnComentariosVendedor6" alignment="CENTER" layoutX="407.0" layoutY="120.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="258.0" style="-fx-background-color: #3b5998;" text="ABRIR VENTANA COMENTARIOS" textFill="WHITE">
+                                                                      <font>
+                                                                         <Font name="Franklin Gothic Book" size="16.0" />
+                                                                      </font>
+                                                                   </Button>
+                                                                   <Button fx:id="btnMeGustaVendedor6" layoutX="157.0" layoutY="193.0" mnemonicParsing="false" style="-fx-background-color: #3b5998;" text="ME GUSTA" textFill="WHITE" />
+                                                                   <Label layoutX="340.0" layoutY="190.0" text="👍" textFill="#3b5998">
+                                                                      <font>
+                                                                         <Font size="18.0" />
+                                                                      </font>
+                                                                   </Label>
+                                                                   <Label fx:id="lblLikes6" alignment="CENTER" layoutX="300.0" layoutY="190.0" prefHeight="27.0" prefWidth="42.0" text="0" />
+                                                                </children>
+                                                             </AnchorPane>
+                                                             <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" style="-fx-background-color: #ffffff;">
+                                                                <children>
+                                                                   <Label layoutX="22.0" layoutY="14.0" prefHeight="31.0" prefWidth="106.0" text="Aliados:" textAlignment="CENTER">
+                                                                      <font>
+                                                                         <Font name="Franklin Gothic Book" size="18.0" />
+                                                                      </font>
+                                                                   </Label>
+                                                                   <TableView fx:id="tblAliadosVendedor6" layoutX="22.0" layoutY="45.0" prefHeight="168.0" prefWidth="343.0" style="-fx-background-color: #E4F4FF;">
+                                                                      <columns>
+                                                                         <TableColumn fx:id="colNombreAliado6" prefWidth="161.0" text="NOMBRE" />
+                                                                         <TableColumn fx:id="colApellidoAliado6" prefWidth="181.0" text="APELLIDO" />
+                                                                      </columns>
+                                                                   </TableView>
+                                                                   <Button fx:id="btnGestionarAliadosVendedor6" alignment="CENTER" layoutX="406.0" layoutY="127.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="258.0" style="-fx-background-color: #3b5998;" text="GESTIONAR ALIADOS" textFill="WHITE">
+                                                                      <font>
+                                                                         <Font name="Franklin Gothic Book" size="16.0" />
+                                                                      </font>
+                                                                   </Button>
+                                                                   <Button fx:id="btnCharlaVendedor6" alignment="CENTER" layoutX="471.0" layoutY="182.0" mnemonicParsing="false" style="-fx-background-color: #3b5998;" text="INICIAR CHARLA" textFill="WHITE">
+                                                                      <font>
+                                                                         <Font name="Franklin Gothic Book" size="16.0" />
+                                                                      </font>
+                                                                   </Button>
+                                                                   <Button fx:id="btnVerProductosVendedor6" alignment="CENTER" layoutX="406.0" layoutY="83.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="258.0" style="-fx-background-color: #3b5998;" text="VER PRODUCTOS" textFill="WHITE">
+                                                                      <font>
+                                                                         <Font name="Franklin Gothic Book" size="16.0" />
+                                                                      </font>
+                                                                   </Button>
+                                                                </children>
+                                                             </AnchorPane>
+                                                          </items>
+                                                       </SplitPane>
+                                                    </children>
+                                                 </AnchorPane>
+                                              </items>
+                                           </SplitPane>
+                                        </children>
+                                     </AnchorPane>
+                                  </content>
+                               </Tab>
+                            </tabs>
+                         </TabPane>
+                         <Label alignment="CENTER" layoutX="299.0" layoutY="20.0" prefHeight="31.0" prefWidth="150.0" text="MI CUENTA" textAlignment="CENTER" textFill="WHITE">
+                            <font>
+                               <Font name="Franklin Gothic Book" size="31.0" />
+                            </font>
+                         </Label>
+                         <Button fx:id="btnRefrescarVendedor6" layoutX="595.0" layoutY="26.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="141.0" style="-fx-background-color: #FFFF;" text="REFRESCAR DATOS" textFill="#3b5998">
+                            <font>
+                               <Font name="Franklin Gothic Book" size="14.0" />
+                            </font>
+                         </Button>
+                      </children>
+                   </AnchorPane>
+                </children>
+             </AnchorPane>
+          </content>
+       </Tab>
+       <Tab fx:id="tabVendedor7" text="Vendedor 7">
+          <content>
+             <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                <children>
+                   <AnchorPane prefHeight="645.0" prefWidth="748.0" style="-fx-background-color: #3b5998;">
+                      <children>
+                         <TabPane layoutX="7.0" layoutY="74.0" prefHeight="536.0" prefWidth="732.0" tabClosingPolicy="UNAVAILABLE">
+                            <tabs>
+                               <Tab text="INFORMACIÓN PERSONAL">
+                                  <content>
+                                     <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ffffff;">
+                                        <children>
+                                           <Label layoutX="43.0" layoutY="61.0" prefHeight="22.0" prefWidth="100.0" text="Nombre:  ">
+                                              <font>
+                                                 <Font name="Franklin Gothic Book" size="14.0" />
+                                              </font>
+                                           </Label>
+                                           <Label layoutX="43.0" layoutY="88.0" prefHeight="22.0" prefWidth="100.0" text="Apellido:  ">
+                                              <font>
+                                                 <Font name="Franklin Gothic Book" size="14.0" />
+                                              </font>
+                                           </Label>
+                                           <Label layoutX="43.0" layoutY="116.0" prefHeight="22.0" prefWidth="100.0" text="Cedula:    ">
+                                              <font>
+                                                 <Font name="Franklin Gothic Book" size="14.0" />
+                                              </font>
+                                           </Label>
+                                           <Button fx:id="btnCambiarDireccionVendedor7" layoutX="43.0" layoutY="207.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="141.0" style="-fx-background-color: #3b5998;" text="CAMBIAR DIRECCIÓN" textFill="WHITE" />
+                                           <Separator layoutX="42.0" layoutY="53.0" prefHeight="7.0" prefWidth="329.0" />
+                                           <Label layoutX="42.0" layoutY="23.0" text="INFORMACIÓN PERSONAL">
+                                              <font>
+                                                 <Font name="Franklin Gothic Book" size="15.0" />
+                                              </font>
+                                           </Label>
+                                           <Label fx:id="lbNombre7" layoutX="172.0" layoutY="61.0" prefHeight="22.0" prefWidth="200.0">
+                                              <font>
+                                                 <Font name="Franklin Gothic Book" size="14.0" />
+                                              </font>
+                                           </Label>
+                                           <Label fx:id="lblApellido7" layoutX="172.0" layoutY="88.0" prefHeight="22.0" prefWidth="200.0">
+                                              <font>
+                                                 <Font name="Franklin Gothic Book" size="14.0" />
+                                              </font>
+                                           </Label>
+                                           <Label fx:id="lblCedula7" layoutX="172.0" layoutY="116.0" prefHeight="22.0" prefWidth="200.0">
+                                              <font>
+                                                 <Font name="Franklin Gothic Book" size="14.0" />
+                                              </font>
+                                           </Label>
+                                        </children>
+                                     </AnchorPane>
+                                  </content>
+                               </Tab>
+                               <Tab text="VENDEDOR">
+                                  <content>
+                                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #ffffff;">
+                                        <children>
+                                           <SplitPane layoutX="14.0" layoutY="14.0" prefHeight="488.0" prefWidth="714.0">
+                                              <items>
+                                                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" style="-fx-background-color: #ffffff;">
+                                                    <children>
+                                                       <SplitPane dividerPositions="0.5" layoutX="11.0" layoutY="11.0" orientation="VERTICAL" prefHeight="465.0" prefWidth="688.0">
+                                                          <items>
+                                                             <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" style="-fx-background-color: #ffffff;">
+                                                                <children>
+                                                                   <Label layoutX="25.0" layoutY="14.0" prefHeight="31.0" prefWidth="270.0" text="Productos registrados y sugeridos:" textAlignment="CENTER">
+                                                                      <font>
+                                                                         <Font name="Franklin Gothic Book" size="18.0" />
+                                                                      </font>
+                                                                   </Label>
+                                                                   <TableView fx:id="tblSugeridosVendedor7" layoutX="25.0" layoutY="44.0" prefHeight="142.0" prefWidth="337.0" style="-fx-background-color: #E4F4FF;">
+                                                                      <columns>
+                                                                         <TableColumn fx:id="colNombreProducto7" prefWidth="177.0" text="NOMBRE" />
+                                                                         <TableColumn fx:id="colEstadoProducto7" prefWidth="160.0" text="ESTADO" />
+                                                                      </columns>
+                                                                   </TableView>
+                                                                   <Button fx:id="btnAgregarProductoVendedor7" alignment="CENTER" layoutX="407.0" layoutY="76.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="258.0" style="-fx-background-color: #3b5998;" text="AGREGAR PRODUCTO" textFill="WHITE">
+                                                                      <font>
+                                                                         <Font name="Franklin Gothic Book" size="16.0" />
+                                                                      </font>
+                                                                   </Button>
+                                                                   <Button fx:id="btnComentariosVendedor7" alignment="CENTER" layoutX="407.0" layoutY="120.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="258.0" style="-fx-background-color: #3b5998;" text="ABRIR VENTANA COMENTARIOS" textFill="WHITE">
+                                                                      <font>
+                                                                         <Font name="Franklin Gothic Book" size="16.0" />
+                                                                      </font>
+                                                                   </Button>
+                                                                   <Button fx:id="btnMeGustaVendedor7" layoutX="157.0" layoutY="193.0" mnemonicParsing="false" style="-fx-background-color: #3b5998;" text="ME GUSTA" textFill="WHITE" />
+                                                                   <Label layoutX="340.0" layoutY="190.0" text="👍" textFill="#3b5998">
+                                                                      <font>
+                                                                         <Font size="18.0" />
+                                                                      </font>
+                                                                   </Label>
+                                                                   <Label fx:id="lblLikes7" alignment="CENTER" layoutX="300.0" layoutY="190.0" prefHeight="27.0" prefWidth="42.0" text="0" />
+                                                                </children>
+                                                             </AnchorPane>
+                                                             <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" style="-fx-background-color: #ffffff;">
+                                                                <children>
+                                                                   <Label layoutX="22.0" layoutY="14.0" prefHeight="31.0" prefWidth="106.0" text="Aliados:" textAlignment="CENTER">
+                                                                      <font>
+                                                                         <Font name="Franklin Gothic Book" size="18.0" />
+                                                                      </font>
+                                                                   </Label>
+                                                                   <TableView fx:id="tblAliadosVendedor7" layoutX="22.0" layoutY="45.0" prefHeight="168.0" prefWidth="343.0" style="-fx-background-color: #E4F4FF;">
+                                                                      <columns>
+                                                                         <TableColumn fx:id="colNombreAliado7" prefWidth="161.0" text="NOMBRE" />
+                                                                         <TableColumn fx:id="colApellidoAliado7" prefWidth="181.0" text="APELLIDO" />
+                                                                      </columns>
+                                                                   </TableView>
+                                                                   <Button fx:id="btnGestionarAliadosVendedor7" alignment="CENTER" layoutX="406.0" layoutY="127.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="258.0" style="-fx-background-color: #3b5998;" text="GESTIONAR ALIADOS" textFill="WHITE">
+                                                                      <font>
+                                                                         <Font name="Franklin Gothic Book" size="16.0" />
+                                                                      </font>
+                                                                   </Button>
+                                                                   <Button fx:id="btnCharlaVendedor7" alignment="CENTER" layoutX="471.0" layoutY="182.0" mnemonicParsing="false" style="-fx-background-color: #3b5998;" text="INICIAR CHARLA" textFill="WHITE">
+                                                                      <font>
+                                                                         <Font name="Franklin Gothic Book" size="16.0" />
+                                                                      </font>
+                                                                   </Button>
+                                                                   <Button fx:id="btnVerProductosVendedor7" alignment="CENTER" layoutX="406.0" layoutY="83.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="258.0" style="-fx-background-color: #3b5998;" text="VER PRODUCTOS" textFill="WHITE">
+                                                                      <font>
+                                                                         <Font name="Franklin Gothic Book" size="16.0" />
+                                                                      </font>
+                                                                   </Button>
+                                                                </children>
+                                                             </AnchorPane>
+                                                          </items>
+                                                       </SplitPane>
+                                                    </children>
+                                                 </AnchorPane>
+                                              </items>
+                                           </SplitPane>
+                                        </children>
+                                     </AnchorPane>
+                                  </content>
+                               </Tab>
+                            </tabs>
+                         </TabPane>
+                         <Label alignment="CENTER" layoutX="299.0" layoutY="20.0" prefHeight="31.0" prefWidth="150.0" text="MI CUENTA" textAlignment="CENTER" textFill="WHITE">
+                            <font>
+                               <Font name="Franklin Gothic Book" size="31.0" />
+                            </font>
+                         </Label>
+                         <Button fx:id="btnRefrescarVendedor7" layoutX="595.0" layoutY="26.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="141.0" style="-fx-background-color: #FFFF;" text="REFRESCAR DATOS" textFill="#3b5998">
+                            <font>
+                               <Font name="Franklin Gothic Book" size="14.0" />
+                            </font>
+                         </Button>
+                      </children>
+                   </AnchorPane>
+                </children>
+             </AnchorPane>
+          </content>
+       </Tab>
+       <Tab fx:id="tabVendedor8" text="Vendedor 8">
+          <content>
+             <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                <children>
+                   <AnchorPane prefHeight="645.0" prefWidth="748.0" style="-fx-background-color: #3b5998;">
+                      <children>
+                         <TabPane layoutX="7.0" layoutY="74.0" prefHeight="536.0" prefWidth="732.0" tabClosingPolicy="UNAVAILABLE">
+                            <tabs>
+                               <Tab text="INFORMACIÓN PERSONAL">
+                                  <content>
+                                     <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ffffff;">
+                                        <children>
+                                           <Label layoutX="43.0" layoutY="61.0" prefHeight="22.0" prefWidth="100.0" text="Nombre:  ">
+                                              <font>
+                                                 <Font name="Franklin Gothic Book" size="14.0" />
+                                              </font>
+                                           </Label>
+                                           <Label layoutX="43.0" layoutY="88.0" prefHeight="22.0" prefWidth="100.0" text="Apellido:  ">
+                                              <font>
+                                                 <Font name="Franklin Gothic Book" size="14.0" />
+                                              </font>
+                                           </Label>
+                                           <Label layoutX="43.0" layoutY="116.0" prefHeight="22.0" prefWidth="100.0" text="Cedula:    ">
+                                              <font>
+                                                 <Font name="Franklin Gothic Book" size="14.0" />
+                                              </font>
+                                           </Label>
+                                           <Button fx:id="btnCambiarDireccionVendedor8" layoutX="43.0" layoutY="207.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="141.0" style="-fx-background-color: #3b5998;" text="CAMBIAR DIRECCIÓN" textFill="WHITE" />
+                                           <Separator layoutX="42.0" layoutY="53.0" prefHeight="7.0" prefWidth="329.0" />
+                                           <Label layoutX="42.0" layoutY="23.0" text="INFORMACIÓN PERSONAL">
+                                              <font>
+                                                 <Font name="Franklin Gothic Book" size="15.0" />
+                                              </font>
+                                           </Label>
+                                           <Label fx:id="lbNombre8" layoutX="172.0" layoutY="61.0" prefHeight="22.0" prefWidth="200.0">
+                                              <font>
+                                                 <Font name="Franklin Gothic Book" size="14.0" />
+                                              </font>
+                                           </Label>
+                                           <Label fx:id="lblApellido8" layoutX="172.0" layoutY="88.0" prefHeight="22.0" prefWidth="200.0">
+                                              <font>
+                                                 <Font name="Franklin Gothic Book" size="14.0" />
+                                              </font>
+                                           </Label>
+                                           <Label fx:id="lblCedula8" layoutX="172.0" layoutY="116.0" prefHeight="22.0" prefWidth="200.0">
+                                              <font>
+                                                 <Font name="Franklin Gothic Book" size="14.0" />
+                                              </font>
+                                           </Label>
+                                        </children>
+                                     </AnchorPane>
+                                  </content>
+                               </Tab>
+                               <Tab text="VENDEDOR">
+                                  <content>
+                                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #ffffff;">
+                                        <children>
+                                           <SplitPane layoutX="14.0" layoutY="14.0" prefHeight="488.0" prefWidth="714.0">
+                                              <items>
+                                                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" style="-fx-background-color: #ffffff;">
+                                                    <children>
+                                                       <SplitPane dividerPositions="0.5" layoutX="11.0" layoutY="11.0" orientation="VERTICAL" prefHeight="465.0" prefWidth="688.0">
+                                                          <items>
+                                                             <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" style="-fx-background-color: #ffffff;">
+                                                                <children>
+                                                                   <Label layoutX="25.0" layoutY="14.0" prefHeight="31.0" prefWidth="270.0" text="Productos registrados y sugeridos:" textAlignment="CENTER">
+                                                                      <font>
+                                                                         <Font name="Franklin Gothic Book" size="18.0" />
+                                                                      </font>
+                                                                   </Label>
+                                                                   <TableView fx:id="tblSugeridosVendedor8" layoutX="25.0" layoutY="44.0" prefHeight="142.0" prefWidth="337.0" style="-fx-background-color: #E4F4FF;">
+                                                                      <columns>
+                                                                         <TableColumn fx:id="colNombreProducto8" prefWidth="177.0" text="NOMBRE" />
+                                                                         <TableColumn fx:id="colEstadoProducto8" prefWidth="160.0" text="ESTADO" />
+                                                                      </columns>
+                                                                   </TableView>
+                                                                   <Button fx:id="btnAgregarProductoVendedor8" alignment="CENTER" layoutX="407.0" layoutY="76.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="258.0" style="-fx-background-color: #3b5998;" text="AGREGAR PRODUCTO" textFill="WHITE">
+                                                                      <font>
+                                                                         <Font name="Franklin Gothic Book" size="16.0" />
+                                                                      </font>
+                                                                   </Button>
+                                                                   <Button fx:id="btnComentariosVendedor8" alignment="CENTER" layoutX="407.0" layoutY="120.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="258.0" style="-fx-background-color: #3b5998;" text="ABRIR VENTANA COMENTARIOS" textFill="WHITE">
+                                                                      <font>
+                                                                         <Font name="Franklin Gothic Book" size="16.0" />
+                                                                      </font>
+                                                                   </Button>
+                                                                   <Button fx:id="btnMeGustaVendedor8" layoutX="157.0" layoutY="193.0" mnemonicParsing="false" style="-fx-background-color: #3b5998;" text="ME GUSTA" textFill="WHITE" />
+                                                                   <Label layoutX="340.0" layoutY="190.0" text="👍" textFill="#3b5998">
+                                                                      <font>
+                                                                         <Font size="18.0" />
+                                                                      </font>
+                                                                   </Label>
+                                                                   <Label fx:id="lblLikes8" alignment="CENTER" layoutX="300.0" layoutY="190.0" prefHeight="27.0" prefWidth="42.0" text="0" />
+                                                                </children>
+                                                             </AnchorPane>
+                                                             <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" style="-fx-background-color: #ffffff;">
+                                                                <children>
+                                                                   <Label layoutX="22.0" layoutY="14.0" prefHeight="31.0" prefWidth="106.0" text="Aliados:" textAlignment="CENTER">
+                                                                      <font>
+                                                                         <Font name="Franklin Gothic Book" size="18.0" />
+                                                                      </font>
+                                                                   </Label>
+                                                                   <TableView fx:id="tblAliadosVendedor8" layoutX="22.0" layoutY="45.0" prefHeight="168.0" prefWidth="343.0" style="-fx-background-color: #E4F4FF;">
+                                                                      <columns>
+                                                                         <TableColumn fx:id="colNombreAliado8" prefWidth="161.0" text="NOMBRE" />
+                                                                         <TableColumn fx:id="colApellidoAliado8" prefWidth="181.0" text="APELLIDO" />
+                                                                      </columns>
+                                                                   </TableView>
+                                                                   <Button fx:id="btnGestionarAliadosVendedor8" alignment="CENTER" layoutX="406.0" layoutY="127.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="258.0" style="-fx-background-color: #3b5998;" text="GESTIONAR ALIADOS" textFill="WHITE">
+                                                                      <font>
+                                                                         <Font name="Franklin Gothic Book" size="16.0" />
+                                                                      </font>
+                                                                   </Button>
+                                                                   <Button fx:id="btnCharlaVendedor8" alignment="CENTER" layoutX="471.0" layoutY="182.0" mnemonicParsing="false" style="-fx-background-color: #3b5998;" text="INICIAR CHARLA" textFill="WHITE">
+                                                                      <font>
+                                                                         <Font name="Franklin Gothic Book" size="16.0" />
+                                                                      </font>
+                                                                   </Button>
+                                                                   <Button fx:id="btnVerProductosVendedor8" alignment="CENTER" layoutX="406.0" layoutY="83.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="258.0" style="-fx-background-color: #3b5998;" text="VER PRODUCTOS" textFill="WHITE">
+                                                                      <font>
+                                                                         <Font name="Franklin Gothic Book" size="16.0" />
+                                                                      </font>
+                                                                   </Button>
+                                                                </children>
+                                                             </AnchorPane>
+                                                          </items>
+                                                       </SplitPane>
+                                                    </children>
+                                                 </AnchorPane>
+                                              </items>
+                                           </SplitPane>
+                                        </children>
+                                     </AnchorPane>
+                                  </content>
+                               </Tab>
+                            </tabs>
+                         </TabPane>
+                         <Label alignment="CENTER" layoutX="299.0" layoutY="20.0" prefHeight="31.0" prefWidth="150.0" text="MI CUENTA" textAlignment="CENTER" textFill="WHITE">
+                            <font>
+                               <Font name="Franklin Gothic Book" size="31.0" />
+                            </font>
+                         </Label>
+                         <Button fx:id="btnRefrescarVendedor8" layoutX="595.0" layoutY="26.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="141.0" style="-fx-background-color: #FFFF;" text="REFRESCAR DATOS" textFill="#3b5998">
+                            <font>
+                               <Font name="Franklin Gothic Book" size="14.0" />
+                            </font>
+                         </Button>
+                      </children>
+                   </AnchorPane>
+                </children>
+             </AnchorPane>
+          </content>
+       </Tab>
+       <Tab fx:id="btnRefrescarVendedor9" text="Vendedor 9">
+          <content>
+             <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                <children>
+                   <AnchorPane prefHeight="645.0" prefWidth="748.0" style="-fx-background-color: #3b5998;">
+                      <children>
+                         <TabPane layoutX="7.0" layoutY="74.0" prefHeight="536.0" prefWidth="732.0" tabClosingPolicy="UNAVAILABLE">
+                            <tabs>
+                               <Tab text="INFORMACIÓN PERSONAL">
+                                  <content>
+                                     <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ffffff;">
+                                        <children>
+                                           <Label layoutX="43.0" layoutY="61.0" prefHeight="22.0" prefWidth="100.0" text="Nombre:  ">
+                                              <font>
+                                                 <Font name="Franklin Gothic Book" size="14.0" />
+                                              </font>
+                                           </Label>
+                                           <Label layoutX="43.0" layoutY="88.0" prefHeight="22.0" prefWidth="100.0" text="Apellido:  ">
+                                              <font>
+                                                 <Font name="Franklin Gothic Book" size="14.0" />
+                                              </font>
+                                           </Label>
+                                           <Label layoutX="43.0" layoutY="116.0" prefHeight="22.0" prefWidth="100.0" text="Cedula:    ">
+                                              <font>
+                                                 <Font name="Franklin Gothic Book" size="14.0" />
+                                              </font>
+                                           </Label>
+                                           <Button fx:id="btnCambiarDireccionVendedor9" layoutX="43.0" layoutY="207.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="141.0" style="-fx-background-color: #3b5998;" text="CAMBIAR DIRECCIÓN" textFill="WHITE" />
+                                           <Separator layoutX="42.0" layoutY="53.0" prefHeight="7.0" prefWidth="329.0" />
+                                           <Label layoutX="42.0" layoutY="23.0" text="INFORMACIÓN PERSONAL">
+                                              <font>
+                                                 <Font name="Franklin Gothic Book" size="15.0" />
+                                              </font>
+                                           </Label>
+                                           <Label fx:id="lbNombre9" layoutX="172.0" layoutY="61.0" prefHeight="22.0" prefWidth="200.0">
+                                              <font>
+                                                 <Font name="Franklin Gothic Book" size="14.0" />
+                                              </font>
+                                           </Label>
+                                           <Label fx:id="lblApellido9" layoutX="172.0" layoutY="88.0" prefHeight="22.0" prefWidth="200.0">
+                                              <font>
+                                                 <Font name="Franklin Gothic Book" size="14.0" />
+                                              </font>
+                                           </Label>
+                                           <Label fx:id="lblCedula9" layoutX="172.0" layoutY="116.0" prefHeight="22.0" prefWidth="200.0">
+                                              <font>
+                                                 <Font name="Franklin Gothic Book" size="14.0" />
+                                              </font>
+                                           </Label>
+                                        </children>
+                                     </AnchorPane>
+                                  </content>
+                               </Tab>
+                               <Tab text="VENDEDOR">
+                                  <content>
+                                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #ffffff;">
+                                        <children>
+                                           <SplitPane layoutX="14.0" layoutY="14.0" prefHeight="488.0" prefWidth="714.0">
+                                              <items>
+                                                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" style="-fx-background-color: #ffffff;">
+                                                    <children>
+                                                       <SplitPane dividerPositions="0.5" layoutX="11.0" layoutY="11.0" orientation="VERTICAL" prefHeight="465.0" prefWidth="688.0">
+                                                          <items>
+                                                             <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" style="-fx-background-color: #ffffff;">
+                                                                <children>
+                                                                   <Label layoutX="25.0" layoutY="14.0" prefHeight="31.0" prefWidth="270.0" text="Productos registrados y sugeridos:" textAlignment="CENTER">
+                                                                      <font>
+                                                                         <Font name="Franklin Gothic Book" size="18.0" />
+                                                                      </font>
+                                                                   </Label>
+                                                                   <TableView fx:id="tblSugeridosVendedor9" layoutX="25.0" layoutY="44.0" prefHeight="142.0" prefWidth="337.0" style="-fx-background-color: #E4F4FF;">
+                                                                      <columns>
+                                                                         <TableColumn fx:id="colNombreProducto9" prefWidth="177.0" text="NOMBRE" />
+                                                                         <TableColumn fx:id="colEstadoProducto9" prefWidth="160.0" text="ESTADO" />
+                                                                      </columns>
+                                                                   </TableView>
+                                                                   <Button fx:id="btnAgregarProductoVendedor9" alignment="CENTER" layoutX="407.0" layoutY="76.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="258.0" style="-fx-background-color: #3b5998;" text="AGREGAR PRODUCTO" textFill="WHITE">
+                                                                      <font>
+                                                                         <Font name="Franklin Gothic Book" size="16.0" />
+                                                                      </font>
+                                                                   </Button>
+                                                                   <Button fx:id="btnComentariosVendedor9" alignment="CENTER" layoutX="407.0" layoutY="120.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="258.0" style="-fx-background-color: #3b5998;" text="ABRIR VENTANA COMENTARIOS" textFill="WHITE">
+                                                                      <font>
+                                                                         <Font name="Franklin Gothic Book" size="16.0" />
+                                                                      </font>
+                                                                   </Button>
+                                                                   <Button fx:id="btnMegusbtnMeGustaVendedor9ta_vendedorView8" layoutX="157.0" layoutY="193.0" mnemonicParsing="false" style="-fx-background-color: #3b5998;" text="ME GUSTA" textFill="WHITE" />
+                                                                   <Label layoutX="340.0" layoutY="190.0" text="👍" textFill="#3b5998">
+                                                                      <font>
+                                                                         <Font size="18.0" />
+                                                                      </font>
+                                                                   </Label>
+                                                                   <Label fx:id="lblLikes9" alignment="CENTER" layoutX="300.0" layoutY="190.0" prefHeight="27.0" prefWidth="42.0" text="0" />
+                                                                </children>
+                                                             </AnchorPane>
+                                                             <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" style="-fx-background-color: #ffffff;">
+                                                                <children>
+                                                                   <Label layoutX="22.0" layoutY="14.0" prefHeight="31.0" prefWidth="106.0" text="Aliados:" textAlignment="CENTER">
+                                                                      <font>
+                                                                         <Font name="Franklin Gothic Book" size="18.0" />
+                                                                      </font>
+                                                                   </Label>
+                                                                   <TableView fx:id="tblAliadosVendedor9" layoutX="22.0" layoutY="45.0" prefHeight="168.0" prefWidth="343.0" style="-fx-background-color: #E4F4FF;">
+                                                                      <columns>
+                                                                         <TableColumn fx:id="colNombreAliado9" prefWidth="161.0" text="NOMBRE" />
+                                                                         <TableColumn fx:id="colApellidoAliado9" prefWidth="181.0" text="APELLIDO" />
+                                                                      </columns>
+                                                                   </TableView>
+                                                                   <Button fx:id="btnGestionarAliadosVendedor9" alignment="CENTER" layoutX="406.0" layoutY="127.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="258.0" style="-fx-background-color: #3b5998;" text="GESTIONAR ALIADOS" textFill="WHITE">
+                                                                      <font>
+                                                                         <Font name="Franklin Gothic Book" size="16.0" />
+                                                                      </font>
+                                                                   </Button>
+                                                                   <Button fx:id="btnCharlaVendedor9" alignment="CENTER" layoutX="471.0" layoutY="182.0" mnemonicParsing="false" style="-fx-background-color: #3b5998;" text="INICIAR CHARLA" textFill="WHITE">
+                                                                      <font>
+                                                                         <Font name="Franklin Gothic Book" size="16.0" />
+                                                                      </font>
+                                                                   </Button>
+                                                                   <Button fx:id="btnVerProductosVendedor9" alignment="CENTER" layoutX="406.0" layoutY="83.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="258.0" style="-fx-background-color: #3b5998;" text="VER PRODUCTOS" textFill="WHITE">
+                                                                      <font>
+                                                                         <Font name="Franklin Gothic Book" size="16.0" />
+                                                                      </font>
+                                                                   </Button>
+                                                                </children>
+                                                             </AnchorPane>
+                                                          </items>
+                                                       </SplitPane>
+                                                    </children>
+                                                 </AnchorPane>
+                                              </items>
+                                           </SplitPane>
+                                        </children>
+                                     </AnchorPane>
+                                  </content>
+                               </Tab>
+                            </tabs>
+                         </TabPane>
+                         <Label alignment="CENTER" layoutX="299.0" layoutY="20.0" prefHeight="31.0" prefWidth="150.0" text="MI CUENTA" textAlignment="CENTER" textFill="WHITE">
+                            <font>
+                               <Font name="Franklin Gothic Book" size="31.0" />
+                            </font>
+                         </Label>
+                         <Button fx:id="btnRefrescarTablas_vendedorView8" layoutX="595.0" layoutY="26.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="141.0" style="-fx-background-color: #FFFF;" text="REFRESCAR DATOS" textFill="#3b5998">
+                            <font>
+                               <Font name="Franklin Gothic Book" size="14.0" />
+                            </font>
+                         </Button>
+                      </children>
+                   </AnchorPane>
+                </children>
+             </AnchorPane>
+          </content>
+       </Tab>
+       <Tab fx:id="tabVendedor10" text="Vendedor 10">
+          <content>
+             <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                <children>
+                   <AnchorPane prefHeight="645.0" prefWidth="748.0" style="-fx-background-color: #3b5998;">
+                      <children>
+                         <TabPane layoutX="7.0" layoutY="74.0" prefHeight="536.0" prefWidth="732.0" tabClosingPolicy="UNAVAILABLE">
+                            <tabs>
+                               <Tab text="INFORMACIÓN PERSONAL">
+                                  <content>
+                                     <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ffffff;">
+                                        <children>
+                                           <Label layoutX="43.0" layoutY="61.0" prefHeight="22.0" prefWidth="100.0" text="Nombre:  ">
+                                              <font>
+                                                 <Font name="Franklin Gothic Book" size="14.0" />
+                                              </font>
+                                           </Label>
+                                           <Label layoutX="43.0" layoutY="88.0" prefHeight="22.0" prefWidth="100.0" text="Apellido:  ">
+                                              <font>
+                                                 <Font name="Franklin Gothic Book" size="14.0" />
+                                              </font>
+                                           </Label>
+                                           <Label layoutX="43.0" layoutY="116.0" prefHeight="22.0" prefWidth="100.0" text="Cedula:    ">
+                                              <font>
+                                                 <Font name="Franklin Gothic Book" size="14.0" />
+                                              </font>
+                                           </Label>
+                                           <Button fx:id="btnCambiarDireccionVendedor10" layoutX="43.0" layoutY="207.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="141.0" style="-fx-background-color: #3b5998;" text="CAMBIAR DIRECCIÓN" textFill="WHITE" />
+                                           <Separator layoutX="42.0" layoutY="53.0" prefHeight="7.0" prefWidth="329.0" />
+                                           <Label layoutX="42.0" layoutY="23.0" text="INFORMACIÓN PERSONAL">
+                                              <font>
+                                                 <Font name="Franklin Gothic Book" size="15.0" />
+                                              </font>
+                                           </Label>
+                                           <Label fx:id="lbNombre10" layoutX="172.0" layoutY="61.0" prefHeight="22.0" prefWidth="200.0">
+                                              <font>
+                                                 <Font name="Franklin Gothic Book" size="14.0" />
+                                              </font>
+                                           </Label>
+                                           <Label fx:id="lblApellido10" layoutX="172.0" layoutY="81.0" prefHeight="22.0" prefWidth="200.0">
+                                              <font>
+                                                 <Font name="Franklin Gothic Book" size="14.0" />
+                                              </font>
+                                           </Label>
+                                           <Label fx:id="lblCedula10" layoutX="172.0" layoutY="116.0" prefHeight="22.0" prefWidth="200.0">
+                                              <font>
+                                                 <Font name="Franklin Gothic Book" size="14.0" />
+                                              </font>
+                                           </Label>
+                                        </children>
+                                     </AnchorPane>
+                                  </content>
+                               </Tab>
+                               <Tab text="VENDEDOR">
+                                  <content>
+                                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #ffffff;">
+                                        <children>
+                                           <SplitPane layoutX="14.0" layoutY="14.0" prefHeight="488.0" prefWidth="714.0">
+                                              <items>
+                                                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" style="-fx-background-color: #ffffff;">
+                                                    <children>
+                                                       <SplitPane dividerPositions="0.5" layoutX="11.0" layoutY="11.0" orientation="VERTICAL" prefHeight="465.0" prefWidth="688.0">
+                                                          <items>
+                                                             <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" style="-fx-background-color: #ffffff;">
+                                                                <children>
+                                                                   <Label layoutX="25.0" layoutY="14.0" prefHeight="31.0" prefWidth="270.0" text="Productos registrados y sugeridos:" textAlignment="CENTER">
+                                                                      <font>
+                                                                         <Font name="Franklin Gothic Book" size="18.0" />
+                                                                      </font>
+                                                                   </Label>
+                                                                   <TableView fx:id="tblSugeridosVendedor10" layoutX="25.0" layoutY="44.0" prefHeight="142.0" prefWidth="337.0" style="-fx-background-color: #E4F4FF;">
+                                                                      <columns>
+                                                                         <TableColumn fx:id="colNombreProducto10" prefWidth="177.0" text="NOMBRE" />
+                                                                         <TableColumn fx:id="colEstadoProducto10" prefWidth="160.0" text="ESTADO" />
+                                                                      </columns>
+                                                                   </TableView>
+                                                                   <Button fx:id="btnAgregarProductoVendedor10" alignment="CENTER" layoutX="407.0" layoutY="76.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="258.0" style="-fx-background-color: #3b5998;" text="AGREGAR PRODUCTO" textFill="WHITE">
+                                                                      <font>
+                                                                         <Font name="Franklin Gothic Book" size="16.0" />
+                                                                      </font>
+                                                                   </Button>
+                                                                   <Button fx:id="btnComentariosVendedor10" alignment="CENTER" layoutX="407.0" layoutY="120.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="258.0" style="-fx-background-color: #3b5998;" text="ABRIR VENTANA COMENTARIOS" textFill="WHITE">
+                                                                      <font>
+                                                                         <Font name="Franklin Gothic Book" size="16.0" />
+                                                                      </font>
+                                                                   </Button>
+                                                                   <Button fx:id="btnMeGustaVendedor10" layoutX="157.0" layoutY="193.0" mnemonicParsing="false" style="-fx-background-color: #3b5998;" text="ME GUSTA" textFill="WHITE" />
+                                                                   <Label layoutX="340.0" layoutY="190.0" text="👍" textFill="#3b5998">
+                                                                      <font>
+                                                                         <Font size="18.0" />
+                                                                      </font>
+                                                                   </Label>
+                                                                   <Label fx:id="lblLikes10" alignment="CENTER" layoutX="300.0" layoutY="190.0" prefHeight="27.0" prefWidth="42.0" text="0" />
+                                                                </children>
+                                                             </AnchorPane>
+                                                             <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" style="-fx-background-color: #ffffff;">
+                                                                <children>
+                                                                   <Label layoutX="22.0" layoutY="14.0" prefHeight="31.0" prefWidth="106.0" text="Aliados:" textAlignment="CENTER">
+                                                                      <font>
+                                                                         <Font name="Franklin Gothic Book" size="18.0" />
+                                                                      </font>
+                                                                   </Label>
+                                                                   <TableView fx:id="tblAliadosVendedor10" layoutX="22.0" layoutY="45.0" prefHeight="168.0" prefWidth="343.0" style="-fx-background-color: #E4F4FF;">
+                                                                      <columns>
+                                                                         <TableColumn fx:id="colNombreAliado10" prefWidth="161.0" text="NOMBRE" />
+                                                                         <TableColumn fx:id="colApellidoAliado10" prefWidth="181.0" text="APELLIDO" />
+                                                                      </columns>
+                                                                   </TableView>
+                                                                   <Button fx:id="btnGestionarAliadosVendedor10" alignment="CENTER" layoutX="406.0" layoutY="127.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="258.0" style="-fx-background-color: #3b5998;" text="GESTIONAR ALIADOS" textFill="WHITE">
+                                                                      <font>
+                                                                         <Font name="Franklin Gothic Book" size="16.0" />
+                                                                      </font>
+                                                                   </Button>
+                                                                   <Button fx:id="btnCharlaVendedor10" alignment="CENTER" layoutX="471.0" layoutY="182.0" mnemonicParsing="false" style="-fx-background-color: #3b5998;" text="INICIAR CHARLA" textFill="WHITE">
+                                                                      <font>
+                                                                         <Font name="Franklin Gothic Book" size="16.0" />
+                                                                      </font>
+                                                                   </Button>
+                                                                   <Button fx:id="btnVerProductosVendedor10" alignment="CENTER" layoutX="406.0" layoutY="83.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="258.0" style="-fx-background-color: #3b5998;" text="VER PRODUCTOS" textFill="WHITE">
+                                                                      <font>
+                                                                         <Font name="Franklin Gothic Book" size="16.0" />
+                                                                      </font>
+                                                                   </Button>
+                                                                </children>
+                                                             </AnchorPane>
+                                                          </items>
+                                                       </SplitPane>
+                                                    </children>
+                                                 </AnchorPane>
+                                              </items>
+                                           </SplitPane>
+                                        </children>
+                                     </AnchorPane>
+                                  </content>
+                               </Tab>
+                            </tabs>
+                         </TabPane>
+                         <Label alignment="CENTER" layoutX="299.0" layoutY="20.0" prefHeight="31.0" prefWidth="150.0" text="MI CUENTA" textAlignment="CENTER" textFill="WHITE">
+                            <font>
+                               <Font name="Franklin Gothic Book" size="31.0" />
+                            </font>
+                         </Label>
+                         <Button fx:id="btnRefrescarVendedor10" layoutX="595.0" layoutY="26.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="141.0" style="-fx-background-color: #FFFF;" text="REFRESCAR DATOS" textFill="#3b5998">
+                            <font>
+                               <Font name="Franklin Gothic Book" size="14.0" />
+                            </font>
+                         </Button>
+                      </children>
+                   </AnchorPane>
+                </children>
+             </AnchorPane>
+          </content>
+       </Tab> -->
+   </tabs>
+</TabPane>

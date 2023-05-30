@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="607.0" prefWidth="703.0" style="-fx-background-color: #3b5998;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uqvirtual.markerplace.controllers.AgregarProductoViewController">
+   <children>
+      <SplitPane dividerPositions="0.5243664717348928" layoutX="7.0" layoutY="77.0" orientation="VERTICAL" prefHeight="521.0" prefWidth="686.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" style="-fx-background-color: #ffffff;">
+               <children>
+                  <TextField fx:id="txtAgregarProducto_rutaImagen" layoutX="161.0" layoutY="166.0" prefHeight="25.0" prefWidth="250.0">
+                     <font>
+                        <Font name="Franklin Gothic Book" size="14.0" />
+                     </font></TextField>
+                  <Button fx:id="btnAgreImagen_AgregarProducto" layoutX="487.0" layoutY="213.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="136.0" style="-fx-background-color: #3b5998;" text="Agregar imagen" textFill="WHITE">
+                     <font>
+                        <Font name="Franklin Gothic Book" size="14.0" />
+                     </font></Button>
+                  <ComboBox fx:id="cbAgregarProducto_estado" layoutX="161.0" layoutY="121.0" onShowing="#listaEstado" prefHeight="25.0" prefWidth="250.0" />
+                  <TextField fx:id="txtAgregarProducto_precio" layoutX="161.0" layoutY="78.0" prefHeight="25.0" prefWidth="250.0">
+                     <font>
+                        <Font name="Franklin Gothic Book" size="14.0" />
+                     </font></TextField>
+                  <TextField fx:id="txtAgregarProducto_nombre" layoutX="161.0" layoutY="39.0" prefHeight="25.0" prefWidth="250.0">
+                     <font>
+                        <Font name="Franklin Gothic Book" size="14.0" />
+                     </font></TextField>
+                  <Label layoutX="39.0" layoutY="43.0" text="Nombre:">
+                     <font>
+                        <Font name="Franklin Gothic Book" size="14.0" />
+                     </font></Label>
+                  <Label layoutX="39.0" layoutY="83.0" text="Precio:">
+                     <font>
+                        <Font name="Franklin Gothic Book" size="14.0" />
+                     </font></Label>
+                  <Label layoutX="39.0" layoutY="126.0" text="Estado:">
+                     <font>
+                        <Font name="Franklin Gothic Book" size="14.0" />
+                     </font></Label>
+                  <Label layoutX="39.0" layoutY="171.0" text="Ruta de imagen:">
+                     <font>
+                        <Font name="Franklin Gothic Book" size="14.0" />
+                     </font></Label>
+                  <ImageView fx:id="ImageViewProducto" fitHeight="193.0" fitWidth="203.0" layoutX="453.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" style="-fx-background-color: #ffffff;">
+               <children>
+                  <Button fx:id="btnEliminarTbl_AgregarProducto" layoutX="440.0" layoutY="192.0" mnemonicParsing="false" onAction="#eliminarProducto_agregarProductoAction" prefHeight="29.0" prefWidth="136.0" style="-fx-background-color: #3b5998;" text="Eliminar" textFill="WHITE">
+                     <font>
+                        <Font name="Franklin Gothic Book" size="14.0" />
+                     </font>
+                  </Button>
+                  <Label alignment="CENTER" layoutX="230.0" layoutY="14.0" prefHeight="17.0" prefWidth="225.0" text="Listado de productos">
+                     <font>
+                        <Font name="Franklin Gothic Book" size="20.0" />
+                     </font>
+                  </Label>
+                  <TableView fx:id="tblAgregarProducto_listaProducto" layoutX="62.0" layoutY="46.0" prefHeight="125.0" prefWidth="542.0" style="-fx-background-color: #E4F4FF;">
+                    <columns>
+                      <TableColumn fx:id="colNombre" prefWidth="181.0" text="Nombre" />
+                        <TableColumn fx:id="colPrecio" prefWidth="181.0" text="Precio" />
+                      <TableColumn fx:id="colEstado" prefWidth="181.0" text="Estado" />
+                    </columns>
+                  </TableView>
+                  <Button fx:id="btnActualizarTbl_agregarProducto" layoutX="100.0" layoutY="192.0" mnemonicParsing="false" onAction="#actualizarProducto_agregarProductoAction" prefHeight="29.0" prefWidth="136.0" style="-fx-background-color: #3b5998;" text="Actualizar" textFill="WHITE">
+                     <font>
+                        <Font name="Franklin Gothic Book" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnGuardarTbl_AgregarProducto" layoutX="270.0" layoutY="192.0" mnemonicParsing="false" onAction="#guardarProducto_agregarProductoAction" prefHeight="29.0" prefWidth="136.0" style="-fx-background-color: #3b5998;" text="Guardar" textFill="WHITE">
+                     <font>
+                        <Font name="Franklin Gothic Book" size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+      <Label layoutX="187.0" layoutY="21.0" text="Creación de producto" textFill="WHITE">
+         <font>
+            <Font name="Franklin Gothic Book" size="36.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnSalir_AgregarProducto" layoutX="637.0" layoutY="30.0" mnemonicParsing="false" onAction="#salir_agregarProductoAction" style="-fx-background-color: #37548e;" text="X" textFill="WHITE">
+         <font>
+            <Font name="Franklin Gothic Book" size="14.0" />
+         </font></Button>
+   </children>
+</AnchorPane>
